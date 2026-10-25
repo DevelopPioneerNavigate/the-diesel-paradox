@@ -16,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–2 | ✅ Full manuscript prose |
-| Book One Chapters 3–42 | ✍️ Not yet written |
+| Book One Chapters 1–3 | ✅ Full manuscript prose |
+| Book One Chapters 4–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -30,6 +30,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [42-chapter plan](docs/book-one-outline.md)
 - [Chapter One: A Very Bad Day for Physics](manuscript/book-01/chapter-01.md)
 - [Chapter Two: Three Clocks, One Lie](manuscript/book-01/chapter-02.md)
+- [Chapter Three: The Origin Room](manuscript/book-01/chapter-03.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
@@ -50,7 +51,7 @@ A PhaseGate research test produces telemetry from an experiment Diesel has not b
 
 ## Contributing and checks
 
-The manuscript is source-controlled Markdown. Edit the canonical chapters and reference documents; don't manually modify generated PDFs. GitHub Actions will validate manuscript rules and, when dependencies and approved artwork are available, build the development edition.
+The manuscript is source-controlled Markdown. Edit the canonical chapters and reference documents; don't manually modify generated PDFs. GitHub Actions validates canon and chapter structure, builds the development PDF, and attaches a plain-English BUILD_REPORT.md to each build; the workflow summary also lists chapter count, manuscript words, current art blockers, and remaining work.
 
 See [production](docs/production.md) for reproducible build steps and [continuity](docs/continuity.md) for editorial checks.
 
