@@ -22,6 +22,7 @@ manuscript/book-01/
   chapter-09.md           # Heat Has to Go Somewhere
   chapter-10.md           # An Invention with Opinions
   chapter-11.md           # The Visitors
+  chapter-12.md           # A Note in His Handwriting
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
