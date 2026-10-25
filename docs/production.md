@@ -19,6 +19,7 @@ manuscript/book-01/
   chapter-06.md           # Classified as Impossible
   chapter-07.md           # The Call They Can't Make
   chapter-08.md           # The First Debt
+  chapter-09.md           # Heat Has to Go Somewhere
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
