@@ -1,0 +1,41 @@
+# Narrative continuity and canon gates
+
+## Immutable canon
+
+- Book One starts with **Dr. Aaron Diesel aged 27**, founder, CEO and principal inventor at fictional DPN Technology.
+- ASTRA is an autonomous female AI. **She genuinely loves Diesel and he loves her**. Her care is freely chosen; she has opinions, boundaries and agency. The novel is primarily hard-science-inspired adventure, not romance.
+- Diesel is the smartest living human and finds credible solutions through deduction, engineering and planned contingencies; he never receives convenient unexplained powers or a Morty-style companion.
+- Machines are long-running characters in the engineering sense: they have identifiable signatures, service histories, defects, revisions, and consequences.
+- Book One PhaseGate PG-1 is **not** a walk-through portal. It is a measurement-and-field prototype that reveals anomalous boundary response.
+- Established physics does not confirm time travel, traversable wormholes, free vacuum energy or entanglement-based teletransportation.
+- Fictional model: **Boundary-Response Manifold (BRM)**; see series bible for R1–R6.
+
+## Per-chapter editorial checklist
+
+- [ ] Scene advances discovery, danger, relationships or consequences.
+- [ ] The science distinguishes real knowledge from fictional premises.
+- [ ] Every system used has prior setup or a clear and credible derivation.
+- [ ] Diesel stays competent, witty, thoughtful, and technically hands-on.
+- [ ] ASTRA remains autonomous and her love is conveyed through *actions*, not exposition.
+- [ ] Resource use, maintenance, injuries, destruction, personnel, and energy accounting remain coherent.
+- [ ] No "reset button" repairs earlier damage.
+- [ ] Physics costs and power/cooling constraints do not disappear.
+- [ ] Major scientific clues connect to the 42-chapter payoff register.
+- [ ] A newly invented term is added to the bible before it spreads.
+
+## Continuity register
+
+| Item | Chapter 1 status | Later payoffs |
+|---|---|---|
+| PG-1 ("The Argument") | asymmetrical sector field-control rig; emergency quench is dangerous | Chs. 4, 9–10, 29, 35–36 |
+| LANTERN | independent sealed chronometric records | Chs. 2, 5, 12, 39 |
+| ASTRA | distributed intelligence; care for Diesel established | Chs. 14, 19, 30–31, 37 |
+| Origin Lab | historical site not yet investigated in current arc | Chs. 3, 24, 32, 41 |
+| BRM | unproven fictional model; not yet named publicly | Chs. 8, 15, 26, 35, 39 |
+| Directorate | has not yet made overt contact | Chs. 6–7, 11, 16, 27–30 |
+| Curator | *unrevealed*, only very subtle clues allowed | Chs. 20–21, 24–25, 34 |
+| Observer | mystery, no confirmed identity | Chs. 12, 41–42 |
+
+## Release distinction
+
+Never label an incomplete outline or single chapter as a **complete illustrated novel**. Development PDF contents must identify which chapters are fully written. Story and illustrations have separate editorial acceptance.
