@@ -115,12 +115,13 @@ def make_cover():
 def main():
     cli=argparse.ArgumentParser()
     cli.add_argument("--out",default="dist/The_Diesel_Paradox_Development_Edition.pdf")
+    cli.add_argument("--listening",action="store_true",help="Build only written novel chapters for read-aloud PDF apps")
     args=cli.parse_args()
     dest=Path(args.out)
     if not dest.is_absolute():dest=ROOT/dest
     dest.parent.mkdir(parents=True,exist_ok=True)
     st=styles()
-    sections=[
+    sections=[] if args.listening else [
       ("SERIES BIBLE",ROOT/"docs/series-bible.md"),
       ("BOOK ONE: 42-CHAPTER PLAN",ROOT/"docs/book-one-outline.md"),
     ]
@@ -129,20 +130,21 @@ def main():
     story=[
       Paragraph("THE DIESEL PARADOX",st["h1"]),
       Paragraph("Book One: The First Impossibility",st["h2"]),
-      Paragraph("Canon V3.1 | DPN Technology | Development Edition",st["p"]),
-      Paragraph("This is not a completed novel. It contains the series bible, 42-chapter outline and only chapters currently written in full prose.",st["p"]),
+      Paragraph("Canon V3.1 | DPN Technology | "+("Listening Edition" if args.listening else "Development Edition"),st["p"]),
+      Paragraph(("This edition contains only Chapters 1 through "+str(len(sections))+" written in full prose, with selectable text suitable for read-aloud apps. The entire novel is not complete." if args.listening else "This is not a completed novel. It contains the series bible, 42-chapter outline and only chapters currently written in full prose."),st["p"]),
     ]
     for title,path in sections:
         story.extend([PageBreak(),Paragraph(title,st["h2"])])
         story.extend(parse(path.read_text(encoding="utf-8"),st))
     body=BytesIO()
+    edition = "Listening Edition" if args.listening else "Development Edition"
     doc=SimpleDocTemplate(body,pagesize=SIZE,leftMargin=50,rightMargin=50,topMargin=67,bottomMargin=65,
-                          title="The Diesel Paradox: Development Edition",author="DPN Technology")
+                          title="The Diesel Paradox: "+edition,author="DPN Technology")
     doc.build(story,onFirstPage=theme_page,onLaterPages=theme_page)
     pdf=PdfWriter()
     pdf.append(PdfReader(BytesIO(make_cover())))
     pdf.append(PdfReader(BytesIO(body.getvalue())))
-    pdf.add_metadata({"/Title":"The Diesel Paradox: Development Edition","/Author":"DPN Technology"})
+    pdf.add_metadata({"/Title":"The Diesel Paradox: "+edition,"/Author":"DPN Technology"})
     with dest.open("wb") as handle:pdf.write(handle)
     print("Wrote",dest, "pages",len(pdf.pages))
 
