@@ -16,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapter One | ✅ Full manuscript prose |
-| Book One Chapters 2–42 | ✍️ Not yet written |
+| Book One Chapters 1–2 | ✅ Full manuscript prose |
+| Book One Chapters 3–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -28,7 +28,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 
 - [Canon and scientific rules](docs/series-bible.md)
 - [42-chapter plan](docs/book-one-outline.md)
-- [Start reading: Chapter One](manuscript/book-01/chapter-01.md)
+- [Chapter One: A Very Bad Day for Physics](manuscript/book-01/chapter-01.md)
+- [Chapter Two: Three Clocks, One Lie](manuscript/book-01/chapter-02.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
@@ -55,3 +56,5 @@ See [production](docs/production.md) for reproducible build steps and [continuit
 
 ---
 *Original fiction project — DPN Technology universe. Creative canon V3.1. Work in progress.*
+
+**Artwork import issue:** [Add exact approved cover to the repository](https://github.com/DevelopPioneerNavigate/the-diesel-paradox/issues/2).
