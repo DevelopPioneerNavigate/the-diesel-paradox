@@ -12,7 +12,8 @@ docs/
   production.md           # This guide
 manuscript/book-01/
   chapter-01.md           # Full prose, not outline
-  chapter-02.md           # Subsequent chapter if drafted
+  chapter-02.md           # Three Clocks, One Lie
+  chapter-03.md           # The Origin Room
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
@@ -31,9 +32,10 @@ Python 3.11 or newer.
 python -m pip install -r requirements.txt
 python scripts/validate_manuscript.py
 python scripts/build_book.py --out dist/The_Diesel_Paradox_Development.pdf
+python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development.pdf --out dist/BUILD_REPORT.md
 ```
 
-A GitHub Actions workflow validates the canon and produces the **development PDF** as a workflow artifact for each PR. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
+A GitHub Actions workflow validates the canon and produces the **development PDF** plus **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
 
 **Do not mistake successful PDF generation for manuscript completeness.** Unwritten chapters remain unwritten.
 
