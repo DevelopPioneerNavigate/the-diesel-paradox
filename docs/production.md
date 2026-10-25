@@ -16,6 +16,7 @@ manuscript/book-01/
   chapter-03.md           # The Origin Room
   chapter-04.md           # Stop Means Explode
   chapter-05.md           # The Eleven-Minute Window
+  chapter-06.md           # Classified as Impossible
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
