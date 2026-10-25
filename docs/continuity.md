@@ -28,7 +28,7 @@
 | Item | Chapter 1 status | Later payoffs |
 |---|---|---|
 | PG-1 ("The Argument") | Ch. 4: de-energized under repair; human-safe / magnet-safe / data-preserving states; independent transfer interlocks redesigned, not yet qualified full-scale | Chs. 9–10, 29, 35–36 |
-| LANTERN | independent sealed chronometric records | Chs. 2, 5, 12, 39 |
+| LANTERN | independent sealed chronometric records; Ch. 5 blind trial in DPN-301 produces candidate eleven-minute pre-exposure | Chs. 12, 39 |
 | ASTRA | distributed intelligence; care for Diesel established | Chs. 14, 19, 30–31, 37 |
 | Origin Lab | Ch. 3 visited; L-03 recovered under workbench; QRF-17 REV B analog notch frame and unusual residual documented | Chs. 24, 32, 41 |
 | BRM | unproven fictional model; not yet named publicly | Chs. 8, 15, 26, 35, 39 |
@@ -60,6 +60,19 @@
 - Future `QRF-17 / RETURN FRAME` loop drawing has a bracket clearance matching **damaged** Sector Six dimensions, which does not prove future provenance but deepens the original mystery.
 - ASTRA and Diesel defer forensic analysis of the old `ASTRA_FIRST_CONVERSATION_RAW_02` archive until in-person review with proper provenance.
 - Chapter Five will investigate the eleven-minute offset through blind, controlled repetitions, not assert that time travel is established.
+
+## Chapter Five locked observations
+
+- PG-1 remains **offline** pending Sector Six repairs and independent quench certification. Chapter Five's optical experiment does not energize the PhaseGate.
+- In DPN-301, Diesel, Elena Mora, Jian Rao, ASTRA and independent analysts use **pre-registered controls**, shuffled trial types, blinded analysis, physically separated safety monitoring, independent clocks, and sealed photonic records.
+- The test conditions include dark, rejected-band, active candidate, reversed modulation, electronically simulated, and shuttered sham trials. Controls reveal ordinary contamination including a thermal sensor mounting fault, stray optical reflection and amplifier reset. These are **disclosed, not hidden**.
+- One physical optical pre-exposure occurs approximately **eleven minutes** before a subsequently scheduled three-interval optical pulse. A blinded first-pass comparison finds a related modulation and established event order. **It is not definitive proof** of future-to-past information transfer; schedule leakage, unknown signal coupling, and sensor faults must still be investigated.
+- The full blind schedule was generated and sealed **before** the trial; this means a conventional information leak from the schedule remains a leading hypothesis. Lack of an authorized access log does not conclusively exclude leakage.
+- The write-once photonic detector gives physical exposure order, independent of merely trusting network timestamps.
+- Diesel commissions **WINDOW-01**, a separate low-energy replication rig with remote randomized scheduling, a second detector batch, independent optical channels and blind analysis. This is future work; **WINDOW-01 is not built yet**.
+- ASTRA's distributed safety subsystem monitors hazards but does not access the experimental randomization during the blinded trial. Her genuine love for Diesel appears through care and chosen support without dictating the scientific result.
+- An external electrical power-quality monitor records a small three-part transient at the same time as the optical pre-exposure. The correlation may have a **conventional common cause**; cause is unproven. A historical utility log allegedly contains a similar event from the early Origin Lab era and its provenance is **unverified**. Do not reveal the Directorate or Curator as the source here.
+- Chapter Six should introduce the Continuity Directorate based on a fragmentary signature; its information should be plausible from infrastructure monitoring and **not** omniscient discovery.
 
 ## Release distinction
 
