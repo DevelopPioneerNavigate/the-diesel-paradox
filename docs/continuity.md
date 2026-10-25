@@ -32,7 +32,7 @@
 | ASTRA | distributed intelligence; care for Diesel established | Chs. 14, 19, 30–31, 37 |
 | Origin Lab | Ch. 3 visited; L-03 recovered under workbench; QRF-17 REV B analog notch frame and unusual residual documented | Chs. 24, 32, 41 |
 | BRM | unproven fictional model; not yet named publicly | Chs. 8, 15, 26, 35, 39 |
-| Directorate | Ch. 6: Director Evelyn Sloane makes first verified contact based on external utility/timing records, not private DPN science | Chs. 7, 11, 16, 27–30 |
+| Directorate | Chs. 6–7: Sloane offers narrowly scoped cooperation, authorizes limited lawful external monitoring; contractor exceeds access scope, inquiry ongoing | Chs. 11, 16, 27–30 |
 | Curator | *unrevealed*, only very subtle clues allowed | Chs. 20–21, 24–25, 34 |
 | Observer | mystery, no confirmed identity | Chs. 12, 41–42 |
 
@@ -86,6 +86,19 @@
 - Sloane and Diesel share respect for measured uncertainty and public safety despite conflicting positions on independent experimental oversight. First in-person technical meeting is **proposed**, not held.
 - WINDOW-01 remains **unbuilt**: procurement and independent replication design are underway; no second definitive experiment has occurred.
 - Chapter Seven: Sloane offers cooperation and quietly arranges surveillance; ASTRA detects it and blocks Diesel from an unsafe retaliation. Preserve earned technical deductions and no intrusive omniscience.
+
+## Chapter Seven locked observations
+
+- Diesel and Director Sloane meet in person at **a neutral engineering arbitration center in Grand Rapids**; ASTRA and Elena attend. A **limited technical working group is proposed but no agreement is yet signed**.
+- Sloane's limited lawful public-metadata monitoring authorized external observation. Contractor's shared-service support inquiry requested connectivity information **outside the permitted scope**; this was neither a confirmed restricted-system intrusion nor proof of Sloane authorizing the excess.
+- The shared environmental telemetry provider supports **other customers including hospital and municipal water facilities**. Diesel initially considers using an active response to trace the contractor; **ASTRA independently refuses** because unknown shared-service dependencies could affect bystanders. Diesel immediately agrees and chooses passive evidence collection and narrow permission isolation.
+- Provider's preliminary review confirms the improper request was **canceled before any private DPN connectivity information was returned through it**, although investigation continues. Do not imply a proven successful breach.
+- Sloane pauses related contractor work and removes broader collection authority; she demands Redd's written account and temporarily removes him from contractor coordination, but suspicion and oversight tension persist.
+- No one may use a network or infrastructure service shared with civilian safety systems as an investigative testbed without clear safety and legal authority.
+- A separate **failed legacy communications-session record** appears on the retired DPN-001 monitoring interface for a disconnected old number. No voice call was completed, no sender authenticated, no actual physical communication demonstrated; caller-ID/session metadata can be falsified and instrument artifacts remain candidate explanations. Three-part interval resembles other anomalies incompletely. It gives the title **The Call They Can't Make**, not a demonstrated supernatural phone call.
+- The protected file `ASTRA_FIRST_CONVERSATION_RAW_02` remains **unopened**; Diesel and ASTRA reaffirm plan to examine it together with proper provenance.
+- WINDOW-01 is still **not built**; components on order. PG-1 remains offline and Sector Six under repairs. No new physical BRM principle is established in this chapter.
+- Chapter Eight: **The First Debt** should introduce measurable phase-drift/debt via new observations and a changed experiment sequence, not declare full BRM truth. The Directorate/Curator should not know secret DPN findings without credible evidence.
 
 ## Release distinction
 
