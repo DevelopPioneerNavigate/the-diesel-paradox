@@ -31,7 +31,7 @@
 | LANTERN | independent sealed chronometric records; Ch. 5 blind trial in DPN-301 produces candidate eleven-minute pre-exposure | Chs. 12, 39 |
 | ASTRA | distributed intelligence; care for Diesel established | Chs. 14, 19, 30–31, 37 |
 | Origin Lab | Ch. 3 visited; L-03 recovered under workbench; QRF-17 REV B analog notch frame and unusual residual documented | Chs. 24, 32, 41 |
-| BRM | unproven fictional model; not yet named publicly | Chs. 8, 15, 26, 35, 39 |
+| BRM | Ch. 8: D* provisionally names a measured residual-phase proxy as 'causal debt'; no universal law or exotic mechanism established | Chs. 15, 26, 35, 39 |
 | Directorate | Chs. 6–7: Sloane offers narrowly scoped cooperation, authorizes limited lawful external monitoring; contractor exceeds access scope, inquiry ongoing | Chs. 11, 16, 27–30 |
 | Curator | *unrevealed*, only very subtle clues allowed | Chs. 20–21, 24–25, 34 |
 | Observer | mystery, no confirmed identity | Chs. 12, 41–42 |
@@ -99,6 +99,20 @@
 - The protected file `ASTRA_FIRST_CONVERSATION_RAW_02` remains **unopened**; Diesel and ASTRA reaffirm plan to examine it together with proper provenance.
 - WINDOW-01 is still **not built**; components on order. PG-1 remains offline and Sector Six under repairs. No new physical BRM principle is established in this chapter.
 - Chapter Eight: **The First Debt** should introduce measurable phase-drift/debt via new observations and a changed experiment sequence, not declare full BRM truth. The Directorate/Curator should not know secret DPN findings without credible evidence.
+
+## Chapter Eight locked observations
+
+- This chapter concludes **Act I: The Warning**. WINDOW-01 is now **assembled and initially qualified** as a *low-energy optical* apparatus in DPN-301. PG-1 PhaseGate at DPN-401 **remains OFFLINE** with Sector Six under repair and full quench safety qualification outstanding.
+- WINDOW-01 uses independent optical detection, new detector fabrication batch, a third-party clock reference, physical sealed recording media, and a separate future randomization annex. Future pulse selection is physically generated late in the interval, not fully available at the beginning.
+- A faint candidate **physical pre-exposure** occurs at 17:08. The protocol includes a pre-registered, separately authorized intervention/sham option. At 17:18 a branch selection diverts source energy into an absorber, so **no matching optical pulse is emitted** when the later pulse time arrives. The earlier physical record remains.
+- This does **NOT** demonstrate a prevented future event, time travel, or a BRM law. Detector faults, hidden light/EM pathways, leakage of candidate patterns, and analysis selection effects remain alternatives. Blind analysis preserves candidate detection before branch decoding.
+- Several *nearby* metrology instruments record a small accumulating **phase disagreement** after the intervention. Environmental vibration and thermal coupling explain part but not all of a **statistically unresolved residual**; **no external regional hazard is observed**. The phase drift relaxes under passive isolation; spatial correlation toward the recorder is exploratory.
+- Diesel defines **D* (D-star)** as a *provisional integrated residual-phase metric*, nicknamed **causal debt**. It is an operational proxy and **not a proven universal conserved quantity, energy source, or physical constant**. Later experiments may refine or falsify it.
+- The team suspends further active tests until the unexplained residual is understood. A future **WINDOW-02** environmental boundary and blinded replication test is **designed but not built**. DPN-501 energy/material specialists will join future work as the scale increases.
+- Real-world no-signaling, energy and heat limits remain in force as scientific baseline; none of this implies free time travel or functioning traversable portals.
+- The original `ASTRA_FIRST_CONVERSATION_RAW_02` archive and DPN-001 failed communications record remain unresolved and isolated. Sloane's cooperation working group remains **proposed and unsigned**.
+- ASTRA chooses independent science/safety standards and cares for Diesel's physical and emotional well-being; Diesel reciprocates while making earned technical deductions. Their relationship is foundational, not the novel's marketing genre.
+- Chapter Nine *Heat Has to Go Somewhere* must build from **real stored energy and cooling/transfer engineering** in DPN-501; do not claim D* has been established as directly interconvertible with energy.
 
 ## Release distinction
 
