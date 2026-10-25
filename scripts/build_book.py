@@ -149,7 +149,7 @@ def main():
     for section,source in sections:
         source_text=source.read_text(encoding="utf-8")
         if source.name.startswith("chapter-"):
-            heading=re.search(r"(?m)^##\\s+(Chapter [^\\n]+)",source_text)
+            heading=re.search(r"(?m)^##\s+(Chapter [^\n]+)",source_text)
             if not heading:
                 raise ValueError(f"Chapter heading not found in {source}")
             label=heading.group(1).strip()
