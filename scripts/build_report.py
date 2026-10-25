@@ -17,6 +17,7 @@ counts={x.name:len(x.read_text(encoding="utf-8").split()) for x in chapters}
 count=len(chapters)
 words=sum(counts.values())
 pdf=ROOT/args.pdf
+listening=ROOT/"dist/The_Diesel_Paradox_Listening_Edition.pdf"
 approved=ROOT/"assets/cover/approved-cover.png"
 report=[
 "# The Diesel Paradox — Build Report",
@@ -30,6 +31,8 @@ f"- Fully written chapters: **{count} of 42** ({count/42:.1%}).",
 f"- Manuscript: approximately **{words:,}** words.",
 "- Series bible Canon V3.1 and connected 42-chapter outline.",
 f"- PDF pages rendered: **{len(PdfReader(str(pdf)).pages)}**.",
+(f"- Listening-only pages rendered: **{len(PdfReader(str(listening)).pages)}**." if listening.exists() else "- Listening-only edition not generated."),
+"- Listening edition includes only written chapter prose; no planning bible or outline.",
 "",
 "## Chapter inventory",
 ]
