@@ -27,7 +27,7 @@
 
 | Item | Chapter 1 status | Later payoffs |
 |---|---|---|
-| PG-1 ("The Argument") | asymmetrical sector field-control rig; emergency quench is dangerous | Chs. 4, 9–10, 29, 35–36 |
+| PG-1 ("The Argument") | Ch. 4: de-energized under repair; human-safe / magnet-safe / data-preserving states; independent transfer interlocks redesigned, not yet qualified full-scale | Chs. 9–10, 29, 35–36 |
 | LANTERN | independent sealed chronometric records | Chs. 2, 5, 12, 39 |
 | ASTRA | distributed intelligence; care for Diesel established | Chs. 14, 19, 30–31, 37 |
 | Origin Lab | Ch. 3 visited; L-03 recovered under workbench; QRF-17 REV B analog notch frame and unusual residual documented | Chs. 24, 32, 41 |
@@ -47,6 +47,19 @@
 - ASTRA notices an archival filename ASTRA_FIRST_CONVERSATION_RAW_02 with suspect modification chronology and flags it for in-person review. The artifact is not yet opened or authenticated.
 - ASTRA's love, independent choice, gentle care and Diesel's reciprocal love remain central without turning the series into a romance-focused genre.
 - Chapter Four returns to DPN-401 and the safety hierarchy: the ordinary quench-control failure must be engineered credibly.
+
+## Chapter Four locked observations
+
+- PG-1 is **not** returned to service in Chapter Four; Sector Six still has structural damage and the newly designed protection architecture needs qualification.
+- `LITTLE ARGUMENT` is a separate **conventional** coil/protection scale test rig, not a spacetime portal. It can demonstrate current, switching, thermal, and sensor-fault behavior without recreating exotic effects.
+- Revisions distinguish **HUMAN-SAFE**, **MAGNET-SAFE**, **DATA-PRESERVING**, and separately verified physical state. A command acknowledgement does not prove stored energy has been safely dissipated.
+- A mislabeled differential voltage sense pair could report **zero** although a physical circuit remained energized. Controller's permissive is rejected after test.
+- A forgotten maintenance bond created an unintended current path during a shielded, restricted scale test. Diesel held the ramp and balanced branch potentials using a verified separate bypass before slow discharge. No personnel entered the cage.
+- Passive interlocks remain physically independent of ASTRA and supervisory software; a hardware-keyed maintenance link is now required, plus independent sensing. Safety is independent of CEO command.
+- The fault exposed an inadequate work process rather than a negligent individual. Diesel accepted design ownership and protected staff.
+- Future `QRF-17 / RETURN FRAME` loop drawing has a bracket clearance matching **damaged** Sector Six dimensions, which does not prove future provenance but deepens the original mystery.
+- ASTRA and Diesel defer forensic analysis of the old `ASTRA_FIRST_CONVERSATION_RAW_02` archive until in-person review with proper provenance.
+- Chapter Five will investigate the eleven-minute offset through blind, controlled repetitions, not assert that time travel is established.
 
 ## Release distinction
 
