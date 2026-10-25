@@ -913,7 +913,7 @@ The machinery of the state had noticed an anomaly.
 
 Whether it would become an ally or an enemy remained an open question.
 
-And Dr. Aaron Diesel had learned enough from the past five chapters of his own life to recognize one important truth.
+And Dr. Aaron Diesel had learned enough over the past few days to recognize one important truth.
 
 The most dangerous thing about a mystery wasn't that people wanted answers.
 
