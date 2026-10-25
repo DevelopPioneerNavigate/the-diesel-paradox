@@ -128,6 +128,21 @@
 - The Directorate's technical working group remains unsigned and does not gain access to DPN's internal data. Sloane has no new knowledge here.
 - Chapter Ten should build on PG-1's asymmetric coil behavior, its prior damage, and the emerging thermal/field return-control constraints. Do not reintroduce PG-1's nickname "The Argument" as if Diesel has never said it before; it was already used in Chapter One.
 
+## Chapter Ten locked observations
+
+- Chapter Ten returns to **DPN-401**, but PG-1 (*The Argument*) stays fully de-energized with Sector Six damaged. The damaged full ring is examined using metrology, models and as-built component measurements only. The nickname **The Argument already existed since Chapter One** and is not newly coined here.
+- A **separate low-energy three-coil test article**, physically protected with independent dump circuits and technician exclusion, characterizes conventional inductive coupling, induced shield currents, magnetic hysteresis, geometry motion and temperature dependence. Do **not** mistake the test article for a functional portal or full-scale PG-1.
+- Ordinary reciprocal mutual inductance is not falsely discarded: *apparent* order-dependence reflects magnetic material state, induced eddy/shield currents, evolving geometry and sensor delays. The old fixed-current-controller model omits these state variables, so it predicts the field transition incorrectly.
+- Diesel's new controller attempts to **maintain a measured field-contour envelope** (bounded physical conditions) rather than rigidly forcing individual coil current trajectories. It only proposes transitions when physical-state confidence, **thermal acceptance**, sensor agreement and independent energy-dump routes support them.
+- **State confidence: LIMITED** and **NEXT TRANSITION: DEFERRED** are deliberate system responses, not sentient-machine behavior. The new controller is not qualified for PG-1. Jian's independent safety circuits retain veto authority. No simulation is treated as a safety certificate.
+- A low-energy live test is interrupted by a **vibration-induced intermittent mechanical-position sensor connector**. Independent sensors disagree, and the controller correctly refuses to continue; the test article is discharged into its verified safe state and the connector fault enters repair/qualification. The day contains **no** full-scale experimental activation or exotic effect demonstration.
+- The DPN-501 coolant skid from Chapter Nine **remains LOCKED OUT**, awaiting hardware repairs and qualification. No existing thermal system is spontaneously fixed. Nia Calder assists with downstream acceptance constraints.
+- The incomplete **QRF-17 / RETURN FRAME** drawing is compared to the ordinary return-control design, but is **not** built, energized, or considered an authoritative circuit specification. It may suggest how future field transitions are handled.
+- ASTRA identifies a **tiny, statistically unresolved residual difference** across coil-transition histories, potentially ordinary magnetic memory or sensor error. Comparison to WINDOW-01's D-star phase residual is **exploratory only**; this does NOT establish BRM coupling in the scale test article.
+- ASTRA and Diesel explicitly reaffirm mutual genuine love and her independent judgment. She insists that her autonomy includes choice over risks she takes, and Diesel respects it. This remains scientific adventure, not romance genre.
+- The Directorate remains limited to public-risk information; its cooperation agreement is **unsigned**. At chapter end, Sloane approves a **request** for a small delegation to visit DPN's ordinary production/demonstration areas. No one has entered the research facilities, no illegal access or automatic visit permission has been granted.
+- Chapter Eleven *The Visitors* must build on the voluntary production/demonstration visit and clearly distinguish legitimate public-safety disclosure from proprietary/restricted PhaseGate research. Avoid misleading claims about human safety.
+
 ## Release distinction
 
 Never label an incomplete outline or single chapter as a **complete illustrated novel**. Development PDF contents must identify which chapters are fully written. Story and illustrations have separate editorial acceptance.
