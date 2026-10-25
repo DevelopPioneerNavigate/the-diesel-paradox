@@ -17,9 +17,9 @@ An assembly that had never been built.
 
 An assembly whose operating geometry, if he understood the relationships correctly, anticipated a control problem his team had only identified yesterday.
 
-And in its lower margin, written at an angle no commercial drafting program would deliberately choose, were six words:
+And in its lower margin, written at an angle no commercial drafting program would deliberately choose, was an instruction with a damaged final character:
 
-**DON'T LET THE REFERENCE FOLLOW YOU.**
+**DON'T LET THE REFERENCE FOLLOW Y—**
 
 The writing looked like his.
 
