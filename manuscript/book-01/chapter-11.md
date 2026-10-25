@@ -945,7 +945,7 @@ Then she looked at the incomplete induction-loop drawing recovered from the impo
 
 There was one feature in it Diesel had not yet studied closely: a narrow compensation branch, drawn behind the main return frame, with a connector geometry unlike anything currently installed in PG-1.
 
-The branch resembled an elegant answer to the field-contour control problem he'd identified in Chapter Ten.
+The branch resembled an elegant answer to the field-contour control problem he'd identified during the previous day's engineering review.
 
 Or it resembled a familiar piece of his own engineering handwriting.
 
