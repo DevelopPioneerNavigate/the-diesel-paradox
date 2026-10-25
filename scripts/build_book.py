@@ -39,6 +39,7 @@ def styles():
            ("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf","DPN-Head")]
     if all(Path(p).exists() for p,n in paths):
         for path,name in paths:pdfmetrics.registerFont(TTFont(name,path))
+        pdfmetrics.registerFontFamily("DPN-Body", normal="DPN-Body", bold="DPN-Head", italic="DPN-Body", boldItalic="DPN-Head")
         regular,bold="DPN-Body","DPN-Head"
     return {
       "p": ParagraphStyle("p",fontName=regular,fontSize=9.3,leading=15.2,textColor=FG,spaceAfter=8),
