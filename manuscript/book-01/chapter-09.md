@@ -1,7 +1,7 @@
 # BOOK ONE: THE FIRST IMPOSSIBILITY
 ## Chapter Nine — Heat Has to Go Somewhere
 
-The temperature warning appeared six seconds before anything broke.
+The temperature warning appeared hours before anything broke.
 
 That was the good news.
 
