@@ -114,6 +114,20 @@
 - ASTRA chooses independent science/safety standards and cares for Diesel's physical and emotional well-being; Diesel reciprocates while making earned technical deductions. Their relationship is foundational, not the novel's marketing genre.
 - Chapter Nine *Heat Has to Go Somewhere* must build from **real stored energy and cooling/transfer engineering** in DPN-501; do not claim D* has been established as directly interconvertible with energy.
 
+## Chapter Nine locked observations
+
+- **Act II: The Experiment** begins at DPN-501, the thermal-storage and field-energy protection research facility. The scene investigates **ordinary conservation of energy, heat transfer, fluid pressure, local heat flux, and safe energy-dump paths**, not D* as a usable energy source.
+- A separate **inductive stored-energy test module** (not the full PhaseGate and not exotic spacetime hardware) is used to qualify the next protection architecture. PG-1 remains **de-energized**, its Sector Six damaged, and its new quench controls not certified at full scale.
+- **Nia Calder**, chief thermal-systems engineer at DPN-501, is introduced: competent, blunt, confident and respected. Jian Rao participates as independent safety reviewer, and Elena Mora supports the broader PhaseGate engineering plan. Nia is not an incompetent sidekick.
+- A return manifold shows a **localized temperature increase** even though global flow and bulk reservoir temperature appear normal. A fabrication-tolerance weld bead produces uneven flow. The error is reliance on summed flow and average temperature rather than local transient heat-transfer rates.
+- During subsequent noncharging service/preparation, a hose in the exchanger skid fails due to **combined thermal and mechanical fatigue**. The inductor is at **zero stored-energy current**. Coolant remains inside rated secondary containment; all personnel remain outside the restricted enclosure. A trapped fluid segment between isolating valves creates a pressure rise; Nia/Diesel verify and use the existing **independent hydrostatic relief route** to a rated recovery vessel. Nobody is injured.
+- The failed skid remains **locked out pending repair**; a software diagram does **not** constitute successful hardware validation. Independent pressure checks and mechanical verification are required before human entry.
+- Diesel's key insight: **total thermal/energy reservoir capacity does not guarantee local heat-transfer *rate* or power acceptance**. The new protection design requires **THERMAL ACCEPTANCE VERIFIED** as a physical condition, with active normal transfer matched to each path's real thermal rate; independent passive protections cover worst-case stored-energy events even when active pumps/control fail. No existing emergency safety protection is intentionally compromised for the experiment.
+- Nia compares an *unverified, incomplete* QRF-17 future-reference induction-loop drawing with the evolving ordinary return-path architecture. She hypothesizes the loop may be associated with **controlled return-path field transitions**, but **does not build or validate it**.
+- WINDOW-01's weak optical pre-exposure and provisional D* phase-drift records remain unresolved. WINDOW-02 is **planned, not built**. The DPN-001 legacy call record and ASTRA_FIRST_CONVERSATION_RAW_02 file remain isolated and unresolved.
+- The Directorate's technical working group remains unsigned and does not gain access to DPN's internal data. Sloane has no new knowledge here.
+- Chapter Ten should build on PG-1's asymmetric coil behavior, its prior damage, and the emerging thermal/field return-control constraints. Do not reintroduce PG-1's nickname "The Argument" as if Diesel has never said it before; it was already used in Chapter One.
+
 ## Release distinction
 
 Never label an incomplete outline or single chapter as a **complete illustrated novel**. Development PDF contents must identify which chapters are fully written. Story and illustrations have separate editorial acceptance.
