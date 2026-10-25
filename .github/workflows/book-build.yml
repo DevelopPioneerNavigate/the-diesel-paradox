@@ -43,10 +43,15 @@ jobs:
           assert "ASTRA" in text
           print(f"Validated {len(reader.pages)} PDF pages")
           PY
+      - name: Explain this build in GitHub Actions Summary
+        if: success()
+        run: python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development_Edition.pdf --out dist/BUILD_REPORT.md
       - uses: actions/upload-artifact@v4
         with:
           name: diesel-paradox-development-edition
-          path: dist/The_Diesel_Paradox_Development_Edition.pdf
+          path: |
+            dist/The_Diesel_Paradox_Development_Edition.pdf
+            dist/BUILD_REPORT.md
           if-no-files-found: error
           retention-days: 30
 
