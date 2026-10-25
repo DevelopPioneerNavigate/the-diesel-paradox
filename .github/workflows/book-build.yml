@@ -45,7 +45,8 @@ jobs:
           assert "ASTRA" in text
           listening = PdfReader("dist/The_Diesel_Paradox_Listening_Edition.pdf")
           audible = "\n".join(page.extract_text() or "" for page in listening.pages)
-          assert "Stop Means Explode" in audible, "Latest chapter not included in listening PDF"
+          assert "Stop Means Explode" in audible, "Core manuscript chapter missing in listening PDF"
+          assert "The First Debt" in audible and "Heat Has to Go Somewhere" in audible, "New Act II manuscript missing from listening PDF"
           assert "The Origin Room" in audible and "Three Clocks, One Lie" in audible
           assert "Series Bible" not in audible and "Forty-Two-Chapter Story Architecture" not in audible
           assert "ASTRA" in audible and "Aaron Diesel" in audible
