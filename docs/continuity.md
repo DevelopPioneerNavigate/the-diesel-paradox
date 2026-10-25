@@ -30,11 +30,23 @@
 | PG-1 ("The Argument") | asymmetrical sector field-control rig; emergency quench is dangerous | Chs. 4, 9–10, 29, 35–36 |
 | LANTERN | independent sealed chronometric records | Chs. 2, 5, 12, 39 |
 | ASTRA | distributed intelligence; care for Diesel established | Chs. 14, 19, 30–31, 37 |
-| Origin Lab | historical site not yet investigated in current arc | Chs. 3, 24, 32, 41 |
+| Origin Lab | Ch. 3 visited; L-03 recovered under workbench; QRF-17 REV B analog notch frame and unusual residual documented | Chs. 24, 32, 41 |
 | BRM | unproven fictional model; not yet named publicly | Chs. 8, 15, 26, 35, 39 |
 | Directorate | has not yet made overt contact | Chs. 6–7, 11, 16, 27–30 |
 | Curator | *unrevealed*, only very subtle clues allowed | Chs. 20–21, 24–25, 34 |
 | Observer | mystery, no confirmed identity | Chs. 12, 41–42 |
+
+## Chapter Three locked observations
+
+- At 4:51 p.m. after his negotiated five-hour rest, Diesel visits DPN-001; he arrives after Chapter Two's LANTERN test.
+- The original L-03 quartz oscillator / notch network was found within the workbench, not stolen.
+- Test found conventional damaged insulation leakage but an asymmetry-dependent residual that survived cable replacement; **it has not been demonstrated to be exotic physics**.
+- QRF-17 / REV B / NOTCH FRAME appears in an old diagram; the future induction-loop schematic contains QRF-17 / RETURN FRAME. Similar identifier is *not proof* of causal identity.
+- The old handwritten remark is **NOT RESONANCE. RESPONSE.**; preserve ambiguity about what he meant.
+- Isolated optical monitor recorded a brief unexplained interval before the scheduled dummy-load step, but requires blind repetition and reflection controls.
+- ASTRA notices an archival filename ASTRA_FIRST_CONVERSATION_RAW_02 with suspect modification chronology and flags it for in-person review. The artifact is not yet opened or authenticated.
+- ASTRA's love, independent choice, gentle care and Diesel's reciprocal love remain central without turning the series into a romance-focused genre.
+- Chapter Four returns to DPN-401 and the safety hierarchy: the ordinary quench-control failure must be engineered credibly.
 
 ## Release distinction
 
