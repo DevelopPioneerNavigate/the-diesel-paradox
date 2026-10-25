@@ -17,6 +17,7 @@ manuscript/book-01/
   chapter-04.md           # Stop Means Explode
   chapter-05.md           # The Eleven-Minute Window
   chapter-06.md           # Classified as Impossible
+  chapter-07.md           # The Call They Can't Make
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
