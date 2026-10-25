@@ -16,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–7 | ✅ Full manuscript prose |
-| Book One Chapters 8–42 | ✍️ Not yet written |
+| Book One Chapters 1–8 | ✅ Full manuscript prose |
+| Book One Chapters 9–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -35,6 +35,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [Chapter Five: The Eleven-Minute Window](manuscript/book-01/chapter-05.md)
 - [Chapter Six: Classified as Impossible](manuscript/book-01/chapter-06.md)
 - [Chapter Seven: The Call They Can't Make](manuscript/book-01/chapter-07.md)
+- [Chapter Eight: The First Debt](manuscript/book-01/chapter-08.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
