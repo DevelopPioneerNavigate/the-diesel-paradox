@@ -144,6 +144,24 @@ def main():
     pdf=PdfWriter()
     pdf.append(PdfReader(BytesIO(make_cover())))
     pdf.append(PdfReader(BytesIO(body.getvalue())))
+    # Bookmarks remain accurate for both the reference and listening editions.
+    page_text=[page.extract_text() or "" for page in pdf.pages]
+    for section,source in sections:
+        source_text=source.read_text(encoding="utf-8")
+        if source.name.startswith("chapter-"):
+            heading=re.search(r"(?m)^##\\s+(Chapter [^\\n]+)",source_text)
+            if not heading:
+                raise ValueError(f"Chapter heading not found in {source}")
+            label=heading.group(1).strip()
+        else:
+            label=section
+        matches=[i for i,text in enumerate(page_text) if label in text]
+        if not matches:
+            # Reference-only sections have a separate section label above the source's own heading.
+            matches=[i for i,text in enumerate(page_text) if section in text]
+        if not matches:
+            raise ValueError(f"Unable to bookmark {source.name}: {label}")
+        pdf.add_outline_item(label,matches[0])
     pdf.add_metadata({"/Title":"The Diesel Paradox: "+edition,"/Author":"DPN Technology"})
     with dest.open("wb") as handle:pdf.write(handle)
     print("Wrote",dest, "pages",len(pdf.pages))
