@@ -14,6 +14,7 @@ manuscript/book-01/
   chapter-01.md           # Full prose, not outline
   chapter-02.md           # Three Clocks, One Lie
   chapter-03.md           # The Origin Room
+  chapter-04.md           # Stop Means Explode
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
