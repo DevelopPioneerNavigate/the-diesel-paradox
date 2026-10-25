@@ -31,6 +31,8 @@ jobs:
         run: python scripts/validate_manuscript.py
       - name: Build DPN-themed development edition
         run: python scripts/build_book.py --out dist/The_Diesel_Paradox_Development_Edition.pdf
+      - name: Build listening edition containing ONLY written chapters
+        run: python scripts/build_book.py --listening --out dist/The_Diesel_Paradox_Listening_Edition.pdf
       - name: Check that the PDF is readable
         run: |
           python - <<'PY'
@@ -41,7 +43,14 @@ jobs:
           text = "\n".join(page.extract_text() or "" for page in reader.pages)
           assert "DIESEL PARADOX" in text.upper()
           assert "ASTRA" in text
-          print(f"Validated {len(reader.pages)} PDF pages")
+          listening = PdfReader("dist/The_Diesel_Paradox_Listening_Edition.pdf")
+          audible = "\n".join(page.extract_text() or "" for page in listening.pages)
+          assert "Stop Means Explode" in audible, "Latest chapter not included in listening PDF"
+          assert "The Origin Room" in audible and "Three Clocks, One Lie" in audible
+          assert "Series Bible" not in audible and "Forty-Two-Chapter Story Architecture" not in audible
+          assert "ASTRA" in audible and "Aaron Diesel" in audible
+          assert len(listening.pages) >= 10
+          print(f"Validated {len(reader.pages)} development pages and {len(listening.pages)} listening pages")
           PY
       - name: Explain this build in GitHub Actions Summary
         if: success()
@@ -51,6 +60,7 @@ jobs:
           name: diesel-paradox-development-edition
           path: |
             dist/The_Diesel_Paradox_Development_Edition.pdf
+            dist/The_Diesel_Paradox_Listening_Edition.pdf
             dist/BUILD_REPORT.md
           if-no-files-found: error
           retention-days: 30
