@@ -15,6 +15,7 @@ manuscript/book-01/
   chapter-02.md           # Three Clocks, One Lie
   chapter-03.md           # The Origin Room
   chapter-04.md           # Stop Means Explode
+  chapter-05.md           # The Eleven-Minute Window
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
