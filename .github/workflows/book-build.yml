@@ -48,7 +48,10 @@ jobs:
           assert "Stop Means Explode" in audible, "Core manuscript chapter missing in listening PDF"
           assert "The First Debt" in audible and "Heat Has to Go Somewhere" in audible, "New Act II manuscript missing from listening PDF"
           assert "An Invention with Opinions" in audible and "The Visitors" in audible, "Latest Act II chapters missing from listening PDF"
-          assert len(listening.outline) >= 11, "Chapter bookmarks absent or incomplete"
+          assert "A Note in His Handwriting" in audible, "Chapter Twelve missing in listening PDF"
+          assert "THE REFERENCE FOLLOW" in audible, "Main Chapter Twelve research clue missing"
+          assert "NULL CHAMBER" in audible, "Null Chamber setup absent from Chapter Twelve"
+          assert len(listening.outline) >= 12, "Chapter bookmarks absent or incomplete"
           assert "The Origin Room" in audible and "Three Clocks, One Lie" in audible
           assert "Series Bible" not in audible and "Forty-Two-Chapter Story Architecture" not in audible
           assert "ASTRA" in audible and "Aaron Diesel" in audible
