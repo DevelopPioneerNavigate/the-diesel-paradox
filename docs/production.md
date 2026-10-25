@@ -33,10 +33,11 @@ Python 3.11 or newer.
 python -m pip install -r requirements.txt
 python scripts/validate_manuscript.py
 python scripts/build_book.py --out dist/The_Diesel_Paradox_Development.pdf
+python scripts/build_book.py --listening --out dist/The_Diesel_Paradox_Listening_Edition.pdf
 python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development.pdf --out dist/BUILD_REPORT.md
 ```
 
-A GitHub Actions workflow validates the canon and produces the **development PDF** plus **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
+A GitHub Actions workflow validates the canon and produces **the reference development PDF**, a **chapters-only listening PDF** with selectable text, and **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
 
 **Do not mistake successful PDF generation for manuscript completeness.** Unwritten chapters remain unwritten.
 
