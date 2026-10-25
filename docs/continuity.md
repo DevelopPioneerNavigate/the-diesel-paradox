@@ -32,7 +32,7 @@
 | ASTRA | distributed intelligence; care for Diesel established | Chs. 14, 19, 30–31, 37 |
 | Origin Lab | Ch. 3 visited; L-03 recovered under workbench; QRF-17 REV B analog notch frame and unusual residual documented | Chs. 24, 32, 41 |
 | BRM | unproven fictional model; not yet named publicly | Chs. 8, 15, 26, 35, 39 |
-| Directorate | has not yet made overt contact | Chs. 6–7, 11, 16, 27–30 |
+| Directorate | Ch. 6: Director Evelyn Sloane makes first verified contact based on external utility/timing records, not private DPN science | Chs. 7, 11, 16, 27–30 |
 | Curator | *unrevealed*, only very subtle clues allowed | Chs. 20–21, 24–25, 34 |
 | Observer | mystery, no confirmed identity | Chs. 12, 41–42 |
 
@@ -73,6 +73,19 @@
 - ASTRA's distributed safety subsystem monitors hazards but does not access the experimental randomization during the blinded trial. Her genuine love for Diesel appears through care and chosen support without dictating the scientific result.
 - An external electrical power-quality monitor records a small three-part transient at the same time as the optical pre-exposure. The correlation may have a **conventional common cause**; cause is unproven. A historical utility log allegedly contains a similar event from the early Origin Lab era and its provenance is **unverified**. Do not reveal the Directorate or Curator as the source here.
 - Chapter Six should introduce the Continuity Directorate based on a fragmentary signature; its information should be plausible from infrastructure monitoring and **not** omniscient discovery.
+
+## Chapter Six locked observations
+
+- The **Continuity Directorate** is introduced through regional timing-reference and utility infrastructure anomalies. Sloane is the director and Tomas Redd her deputy; Martin Vale is the liaison. Its full mandate is *not* established. The public-facing title used is **Regional Continuity Assessment Office**.
+- Directorate analysts know only **fragmentary external waveforms** and a geographic association. They do **not** have DPN optical source data, access to ASTRA, the future packet, or detailed PhaseGate designs. Do not give them omniscient knowledge in Chapter Seven.
+- A regional reference relay showed a phase-reference discrepancy at approximately 12:03 and a later reduction ~11 minutes afterward. Two independent but regionally exposed reference devices are not proof of nonordinary physics: supply interference, GNSS/common-environment effects and firmware timing correction remain alternatives.
+- Sloane does not adopt **CLASS IMPOSSIBLE** as a proven result. The old category merely records failures to fit an instrument model. A historical Directorate memo says **MEASURE THE CLOCKS. NOT THE STORY.** It predates Diesel but its full source/history is unrevealed.
+- The historic utility waveform chart near the Origin Lab has **no original raw data or calibration record**; a photograph carries **CONFIRM SITE ISOLATION. SOURCE NOT ESTABLISHED.** The historical physical association remains unverified.
+- Diesel truthfully confirms PG-1 had an earlier protection failure, has been repaired only in scale prototype design, and **remains OFFLINE**. He offers narrow external hazard and facility-demand information but neither private research data nor ASTRA's internals without a justified, legally supported safety need.
+- ASTRA joins Sloane's call openly as an autonomous technical participant. Diesel explicitly respects her right to speak for herself. Mutual genuine love is woven through choices and private concern.
+- Sloane and Diesel share respect for measured uncertainty and public safety despite conflicting positions on independent experimental oversight. First in-person technical meeting is **proposed**, not held.
+- WINDOW-01 remains **unbuilt**: procurement and independent replication design are underway; no second definitive experiment has occurred.
+- Chapter Seven: Sloane offers cooperation and quietly arranges surveillance; ASTRA detects it and blocks Diesel from an unsafe retaliation. Preserve earned technical deductions and no intrusive omniscience.
 
 ## Release distinction
 
