@@ -3,6 +3,9 @@
 
 **DPN TECHNOLOGY // ORIGINAL SCIENCE FICTION // CANON V3.1**
 
+![PG-1 PhaseGate engineering diagram](assets/brand/phasegate-blueprint.svg)
+
+
 An original, advanced speculative-science novel series following **Dr. Aaron Diesel**, 27-year-old founder and CEO of fictionalized DPN Technology, and **ASTRA**, the self-directed female AI he created. Diesel is the smartest living human; he always solves the intellectual problem. The jeopardy comes from implementation, ethics, the cost to others, and the consequences of invention.
 
 ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love for Aaron—and his love for her—give the technological spectacle a human center. **The books are scientific adventures, not romance novels.** Their relationship is conveyed in concern, autonomy, humor, disagreements, hard choices, and quiet scenes between enormous experiments.
