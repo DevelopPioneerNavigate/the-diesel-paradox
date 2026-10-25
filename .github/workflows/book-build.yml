@@ -47,6 +47,8 @@ jobs:
           audible = "\n".join(page.extract_text() or "" for page in listening.pages)
           assert "Stop Means Explode" in audible, "Core manuscript chapter missing in listening PDF"
           assert "The First Debt" in audible and "Heat Has to Go Somewhere" in audible, "New Act II manuscript missing from listening PDF"
+          assert "An Invention with Opinions" in audible and "The Visitors" in audible, "Latest Act II chapters missing from listening PDF"
+          assert len(listening.outline) >= 11, "Chapter bookmarks absent or incomplete"
           assert "The Origin Room" in audible and "Three Clocks, One Lie" in audible
           assert "Series Bible" not in audible and "Forty-Two-Chapter Story Architecture" not in audible
           assert "ASTRA" in audible and "Aaron Diesel" in audible
