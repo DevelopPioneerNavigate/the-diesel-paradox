@@ -52,7 +52,7 @@ A PhaseGate research test produces telemetry from an experiment Diesel has not b
 
 ## Contributing and checks
 
-The manuscript is source-controlled Markdown. Edit the canonical chapters and reference documents; don't manually modify generated PDFs. GitHub Actions validates canon and chapter structure, builds the development PDF, and attaches a plain-English BUILD_REPORT.md to each build; the workflow summary also lists chapter count, manuscript words, current art blockers, and remaining work.
+The manuscript is source-controlled Markdown. Edit the canonical chapters and reference documents; don't manually modify generated PDFs. GitHub Actions validates canon and chapter structure, builds the development PDF, and attaches both the reference-packed development PDF and the chapters-only listening PDF, plus a plain-English BUILD_REPORT.md to each build; the workflow summary also lists chapter count, manuscript words, current art blockers, and remaining work.
 
 See [production](docs/production.md) for reproducible build steps and [continuity](docs/continuity.md) for editorial checks.
 
