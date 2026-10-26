@@ -397,7 +397,7 @@ He grinned.
 
 ASTRA rolled her eyes.
 
-"The book is not going to become a romance novel."
+"I'm not writing you a love letter about instrument calibration."
 
 He laughed.
 
@@ -603,7 +603,7 @@ Elena frowned.
 
 "Good?"
 
-"Good that we know. If we choose a leading event because it fits a theory, we're building fiction in the data rather than writing it in the book."
+"Good that we know. If we choose a leading event because it fits a theory, we're inventing an answer instead of measuring one."
 
 He glanced at the two traces again.
 
