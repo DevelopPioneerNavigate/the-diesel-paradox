@@ -51,7 +51,9 @@ jobs:
           assert "A Note in His Handwriting" in audible, "Chapter Twelve missing in listening PDF"
           assert "THE REFERENCE FOLLOW" in audible, "Main Chapter Twelve research clue missing"
           assert "NULL CHAMBER" in audible, "Null Chamber setup absent from Chapter Twelve"
-          assert len(listening.outline) >= 12, "Chapter bookmarks absent or incomplete"
+          assert "The Quiet Room" in audible, "Chapter Thirteen missing in listening PDF"
+          assert "NC-01" in audible and "COUPLING REDUCED" in audible, "Null Chamber observations missing"
+          assert len(listening.outline) >= 13, "Chapter bookmarks absent or incomplete"
           assert "The Origin Room" in audible and "Three Clocks, One Lie" in audible
           assert "Series Bible" not in audible and "Forty-Two-Chapter Story Architecture" not in audible
           assert "ASTRA" in audible and "Aaron Diesel" in audible
