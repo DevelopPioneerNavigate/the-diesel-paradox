@@ -16,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–13 | ✅ Full manuscript prose |
-| Book One Chapters 14–42 | ✍️ Not yet written |
+| Book One Chapters 1–14 | ✅ Full manuscript prose |
+| Book One Chapters 15–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -41,6 +41,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [Chapter Eleven: The Visitors](manuscript/book-01/chapter-11.md)
 - [Chapter Twelve: A Note in His Handwriting](manuscript/book-01/chapter-12.md)
 - [Chapter Thirteen: The Quiet Room](manuscript/book-01/chapter-13.md)
+- [Chapter Fourteen: The Woman in the Glass](manuscript/book-01/chapter-14.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
