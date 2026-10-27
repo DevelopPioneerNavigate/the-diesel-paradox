@@ -24,6 +24,7 @@ manuscript/book-01/
   chapter-11.md           # The Visitors
   chapter-12.md           # A Note in His Handwriting
   chapter-13.md           # The Quiet Room
+  chapter-14.md           # The Woman in the Glass
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
