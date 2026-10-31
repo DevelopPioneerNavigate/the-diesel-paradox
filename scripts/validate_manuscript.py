@@ -23,6 +23,14 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-31.md":
+        check(3500<=len(story.split())<=5000,"Chapter 31 must be 3500-5000 full-prose words")
+        check("FRESH PACKET, STALE SOURCE" in story and "SOURCE AGE UNVERIFIED" in story,
+              "Chapter 31 must distinguish stale source data from fresh transport")
+        check("twenty-three seconds" in story and "My primary instance was never interrupted" in story,
+              "Chapter 31 must preserve ASTRA's primary instance and endpoint limits")
+        check("Neither of us owns the other" in story and "old DPN-001 records" in story,
+              "Chapter 31 must preserve autonomous mutual promise and old resonator setup")
     if p.name=="chapter-30.md":
         check(3500<=len(story.split())<=5000,"Chapter 30 must be 3500-5000 full-prose words")
         check("Thirteen minutes of guaranteed margin" in story and "thirteen-minute envelope" in story.lower(),
