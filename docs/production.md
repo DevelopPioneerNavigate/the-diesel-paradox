@@ -26,6 +26,7 @@ manuscript/book-01/
   chapter-13.md           # The Quiet Room
   chapter-14.md           # The Woman in the Glass
   chapter-15.md           # Something That Counts
+  chapter-16.md           # The Offer
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
