@@ -65,6 +65,8 @@ jobs:
           assert "The Dead Station" in " ".join(audible.split()), "Chapter Twenty-Three missing in listening PDF"
           assert "The Curator\u0027s Arithmetic" in " ".join(audible.split()), "Chapter Twenty-Four missing in listening PDF"
           assert "Twelve Seconds of Silence" in " ".join(audible.split()), "Chapter Twenty-Five missing in listening PDF"
+          assert "A City on the Diagram" in " ".join(audible.split()), "Chapter Twenty-Six missing in listening PDF"
+          assert "NO EXTERNAL CAUSAL-DEBT PROPAGATION HAS BEEN DEMONSTRATED" in " ".join(audible.split()), "Chapter Twenty-Six evidence boundary missing"
           assert "DO NOT CONFUSE THE EDGE OF OUR MEASUREMENT" in " ".join(audible.split()), "Chapter Twenty-Five measurement-boundary principle missing"
           assert "POST HOC" in " ".join(audible.split()), "Chapter Twenty-Four evidence-boundary language missing"
           assert "CANDIDATE DETACHED OBJECT OR DEBRIS FEATURE" in " ".join(audible.split()), "Chapter Twenty-Three evidence classification missing"
