@@ -69,6 +69,8 @@ jobs:
           assert "Red Clearance" in " ".join(audible.split()), "Chapter Twenty-Seven missing in listening PDF"
           assert "The Emergency Nobody Invented Yet" in " ".join(audible.split()), "Chapter Twenty-Eight missing in listening PDF"
           assert "The Wrong Rescue" in " ".join(audible.split()), "Chapter Twenty-Nine missing in listening PDF"
+          assert "Thirteen Minutes to Empty" in " ".join(audible.split()), "Chapter Thirty missing in listening PDF"
+          assert "Branch Nine" in " ".join(audible.split()) and "The inspection had not been completed" in " ".join(audible.split()), "Chapter Thirty controlled abort and incomplete inspection missing"
           assert "MECHANICAL LOAD TRANSFER ARRESTED WITHIN MEASUREMENT UNCERTAINTY" in " ".join(audible.split()), "Chapter Twenty-Nine stabilization boundary missing"
           assert "RETURN-6" in " ".join(audible.split()), "Chapter Twenty-Nine wrong-rescue mechanical mechanism missing"
           assert "DECAY AFTER ISOLATION" in " ".join(audible.split()), "Chapter Twenty-Eight incident category missing"
