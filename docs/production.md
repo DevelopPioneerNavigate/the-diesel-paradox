@@ -43,6 +43,7 @@ manuscript/book-01/
   chapter-30.md           # Thirteen Minutes to Empty
   chapter-31.md           # The Promise
   chapter-32.md           # The First Laboratory Key
+  chapter-33.md           # The Price of Stability
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
