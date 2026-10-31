@@ -23,6 +23,12 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-29.md":
+        check(3500<=len(story.split())<=5000,"Chapter 29 must be 3500-5000 full-prose words")
+        check("RETURN-6" in story and "MECHANICAL LOAD TRANSFER ARRESTED WITHIN MEASUREMENT UNCERTAINTY" in story,
+              "Chapter 29 must preserve wrong-rescue engineering evidence and stabilization limit")
+        check("Thirteen minutes" in story and "The transfer has not started" not in story,
+              "Chapter 29 must set up finite buffer without starting an active countdown")
     if p.name=="chapter-28.md":
         check(3500<=len(story.split())<=5000,"Chapter 28 must be 3500-5000 full-prose words")
         check("DAI-01" in story and "NO DEMONSTRATED EXTERNAL BRM COUPLING" in story,
