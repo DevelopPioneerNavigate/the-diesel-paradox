@@ -33,6 +33,7 @@ manuscript/book-01/
   chapter-20.md           # The Housekeeping Signal
   chapter-21.md           # A Courtesy Warning
   chapter-22.md           # An Expensive Question
+  chapter-23.md           # The Dead Station
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
