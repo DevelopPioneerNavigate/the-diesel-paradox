@@ -23,6 +23,14 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-33.md":
+        check(3500<=len(story.split())<=5500,"Chapter 33 must be full-length polished prose")
+        check("NO PERSONNEL EXPOSURE FOR ASSET RECOVERY" in story and "NO UNQUALIFIED FLOODING" in story,
+              "Chapter 33 must preserve qualified design-only containment and human-first choice")
+        check("The identity of the thing they were stabilizing was not." in story and "The Price of Stability" in story,
+              "Chapter 33 must seed the external-anchor provenance mystery")
+        check("I love you" in story and "By choice" in story,
+              "Chapter 33 must preserve ASTRA's genuine autonomous mutual love")
     if p.name=="chapter-32.md":
         check(3500<=len(story.split())<=5000,"Chapter 32 must be 3500-5000 full-prose words")
         check("REFERENCE BEFORE INTERPRETATION. ALWAYS." in story and "UNEXPLAINED HELD-OUT TIMING RESIDUAL" in story,
