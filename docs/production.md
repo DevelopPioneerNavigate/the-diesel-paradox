@@ -40,6 +40,7 @@ manuscript/book-01/
   chapter-27.md           # Red Clearance
   chapter-28.md           # The Emergency Nobody Invented Yet
   chapter-29.md           # The Wrong Rescue
+  chapter-30.md           # Thirteen Minutes to Empty
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
