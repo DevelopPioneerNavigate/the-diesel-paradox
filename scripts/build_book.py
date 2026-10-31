@@ -29,7 +29,7 @@ def theme_page(canvas,doc):
     canvas.setFont("Helvetica",7)
     canvas.setFillColor(colors.HexColor("#a5adbc"))
     canvas.drawString(50,h-43,"DPN TECHNOLOGY  /  THE DIESEL PARADOX")
-    canvas.drawString(50,33,"DEVELOPMENT EDITION  /  CANON V3.1")
+    canvas.drawString(50,33,("LISTENING EDITION" if getattr(doc,"listening",False) else "DEVELOPMENT EDITION")+"  /  CANON V3.1")
     canvas.drawRightString(w-50,33,str(doc.page+1))
     canvas.restoreState()
 
@@ -144,6 +144,7 @@ def main():
     edition = "Listening Edition" if args.listening else "Development Edition"
     doc=SimpleDocTemplate(body,pagesize=SIZE,leftMargin=50,rightMargin=50,topMargin=67,bottomMargin=65,
                           title="The Diesel Paradox: "+edition,author="DPN Technology")
+    doc.listening=args.listening
     doc.build(story,onFirstPage=theme_page,onLaterPages=theme_page)
     pdf=PdfWriter()
     pdf.append(PdfReader(BytesIO(make_cover())))
