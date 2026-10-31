@@ -1,0 +1,134 @@
+name: DPN Book Quality & PDF Build
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "manuscript/**"
+      - "docs/**"
+      - "assets/**"
+      - "scripts/**"
+      - "requirements.txt"
+      - ".github/workflows/book-build.yml"
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  editorial-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install publishing dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Verify canon and manuscript structure
+        run: python scripts/validate_manuscript.py
+      - name: Build DPN-themed development edition
+        run: python scripts/build_book.py --out dist/The_Diesel_Paradox_Development_Edition.pdf
+      - name: Build listening edition containing ONLY written chapters
+        run: python scripts/build_book.py --listening --out dist/The_Diesel_Paradox_Listening_Edition.pdf
+      - name: Check that the PDF is readable
+        run: |
+          python - <<'PY'
+          from pypdf import PdfReader
+          from pathlib import Path
+          p = "dist/The_Diesel_Paradox_Development_Edition.pdf"
+          reader = PdfReader(p)
+          assert len(reader.pages) >= 5, "PDF unexpectedly short"
+          text = "\n".join(page.extract_text() or "" for page in reader.pages)
+          assert "DIESEL PARADOX" in text.upper()
+          assert "ASTRA" in text
+          listening = PdfReader("dist/The_Diesel_Paradox_Listening_Edition.pdf")
+          audible = "\n".join(page.extract_text() or "" for page in listening.pages)
+          assert "Stop Means Explode" in audible, "Core manuscript chapter missing in listening PDF"
+          assert "The First Debt" in audible and "Heat Has to Go Somewhere" in audible, "New Act II manuscript missing from listening PDF"
+          assert "An Invention with Opinions" in audible and "The Visitors" in audible, "Latest Act II chapters missing from listening PDF"
+          assert "A Note in His Handwriting" in audible, "Chapter Twelve missing in listening PDF"
+          assert "THE REFERENCE FOLLOW" in audible, "Main Chapter Twelve research clue missing"
+          assert "NULL CHAMBER" in audible, "Null Chamber setup absent from Chapter Twelve"
+          assert "The Quiet Room" in audible, "Chapter Thirteen missing in listening PDF"
+          assert "The Woman in the Glass" in audible, "Chapter Fourteen missing in listening PDF"
+          assert "Something That Counts" in audible, "Chapter Fifteen missing in listening PDF"
+          assert "The Offer" in audible, "Chapter Sixteen missing in listening PDF"
+          assert "A Signal Without a Sender" in " ".join(audible.split()), "Chapter Seventeen missing in listening PDF"
+          assert "The Observing Machine" in " ".join(audible.split()), "Chapter Eighteen missing in listening PDF"
+          assert "Cold Metal, Warm Hands" in " ".join(audible.split()), "Chapter Nineteen missing in listening PDF"
+          assert "The Housekeeping Signal" in " ".join(audible.split()), "Chapter Twenty missing in listening PDF"
+          assert "A Courtesy Warning" in " ".join(audible.split()), "Chapter Twenty-One missing in listening PDF"
+          assert "An Expensive Question" in " ".join(audible.split()), "Chapter Twenty-Two missing in listening PDF"
+          assert "The Dead Station" in " ".join(audible.split()), "Chapter Twenty-Three missing in listening PDF"
+          assert "The Curator\u0027s Arithmetic" in " ".join(audible.split()), "Chapter Twenty-Four missing in listening PDF"
+          assert "Twelve Seconds of Silence" in " ".join(audible.split()), "Chapter Twenty-Five missing in listening PDF"
+          assert "A City on the Diagram" in " ".join(audible.split()), "Chapter Twenty-Six missing in listening PDF"
+          assert "Red Clearance" in " ".join(audible.split()), "Chapter Twenty-Seven missing in listening PDF"
+          assert "The Emergency Nobody Invented Yet" in " ".join(audible.split()), "Chapter Twenty-Eight missing in listening PDF"
+          assert "The Wrong Rescue" in " ".join(audible.split()), "Chapter Twenty-Nine missing in listening PDF"
+          assert "MECHANICAL LOAD TRANSFER ARRESTED WITHIN MEASUREMENT UNCERTAINTY" in " ".join(audible.split()), "Chapter Twenty-Nine stabilization boundary missing"
+          assert "RETURN-6" in " ".join(audible.split()), "Chapter Twenty-Nine wrong-rescue mechanical mechanism missing"
+          assert "DECAY AFTER ISOLATION" in " ".join(audible.split()), "Chapter Twenty-Eight incident category missing"
+          assert "NO DEMONSTRATED EXTERNAL BRM COUPLING" in " ".join(audible.split()), "Chapter Twenty-Eight evidence boundary missing"
+          assert "BELLWETHER INCIDENT" in " ".join(audible.split()) and "LIMITED EVACUATION" in " ".join(audible.split()), "Chapter Twenty-Seven actual municipal evacuation missing"
+          assert "NO VERIFIED BRM SIGNATURE" in " ".join(audible.split()), "Chapter Twenty-Seven scientific evidence boundary missing"
+          assert "NO EXTERNAL CAUSAL-DEBT PROPAGATION HAS BEEN DEMONSTRATED" in " ".join(audible.split()), "Chapter Twenty-Six evidence boundary missing"
+          assert "DO NOT CONFUSE THE EDGE OF OUR MEASUREMENT" in " ".join(audible.split()), "Chapter Twenty-Five measurement-boundary principle missing"
+          assert "POST HOC" in " ".join(audible.split()), "Chapter Twenty-Four evidence-boundary language missing"
+          assert "CANDIDATE DETACHED OBJECT OR DEBRIS FEATURE" in " ".join(audible.split()), "Chapter Twenty-Three evidence classification missing"
+          assert "MERIDIAN-9 / EPHEMERIS AND REFLECTION AUDIT" in " ".join(audible.split()), "Chapter Twenty-Two next investigation missing"
+          assert "UNTRUSTED MATHEMATICAL ASSERTION" in " ".join(audible.split()), "Chapter Twenty-One evidence boundary missing"
+          assert "REFERENCE_CORRECTION_HINT" in " ".join(audible.split()), "Chapter Twenty external housekeeping evidence missing"
+          assert "HOUSEKEEPING OUTPUTS ARE INSTRUMENT RECORDS" in " ".join(audible.split()), "Chapter Nineteen provenance setup missing"
+          assert "WM-09 / FIELD 27" in " ".join(audible.split()), "Chapter Eighteen survey reference missing"
+          assert "KITE-3" in audible and "NO VERIFIED PROPAGATION PATH" in audible, "Chapter Seventeen evidence controls missing"
+          assert "PUBLIC BOUNDARY WATCH" in audible, "Chapter Sixteen public-safety framework missing"
+          assert "BOUNDARY-AWARE RESIDUAL ACCOUNTING" in audible, "Chapter Fifteen D-star test missing"
+          assert "SESSION CLOSED BY PARTICIPANT" in audible, "ASTRA autonomy change missing from Chapter Fourteen"
+          assert "NC-01" in audible and "COUPLING REDUCED" in audible, "Null Chamber observations missing"
+          chapter_count = len(list(Path("manuscript/book-01").glob("chapter-[0-9][0-9].md")))
+          assert len(listening.outline) >= chapter_count, f"Chapter bookmarks absent or incomplete: {len(listening.outline)} < {chapter_count}"
+          assert "The Origin Room" in audible and "Three Clocks, One Lie" in audible
+          assert "Series Bible" not in audible and "Forty-Two-Chapter Story Architecture" not in audible
+          assert "ASTRA" in audible and "Aaron Diesel" in audible
+          assert len(listening.pages) >= 10
+          print(f"Validated {len(reader.pages)} development pages and {len(listening.pages)} listening pages")
+          PY
+      - name: Explain this build in GitHub Actions Summary
+        if: success()
+        run: python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development_Edition.pdf --out dist/BUILD_REPORT.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: diesel-paradox-development-edition
+          path: |
+            dist/The_Diesel_Paradox_Development_Edition.pdf
+            dist/The_Diesel_Paradox_Listening_Edition.pdf
+            dist/BUILD_REPORT.md
+          if-no-files-found: error
+          retention-days: 30
+
+  publish-main:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]'
+    needs: editorial-and-build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/build_book.py --out books/The_Diesel_Paradox_Development_Edition.pdf
+      - name: Commit the one canonical development PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add books/The_Diesel_Paradox_Development_Edition.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(book): regenerate development edition PDF [skip ci]"
+            git push
+          fi

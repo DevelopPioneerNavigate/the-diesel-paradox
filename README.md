@@ -3,6 +3,9 @@
 
 **DPN TECHNOLOGY // ORIGINAL SCIENCE FICTION // CANON V3.1**
 
+![PG-1 PhaseGate engineering diagram](assets/brand/phasegate-blueprint.svg)
+
+
 An original, advanced speculative-science novel series following **Dr. Aaron Diesel**, 27-year-old founder and CEO of fictionalized DPN Technology, and **ASTRA**, the self-directed female AI he created. Diesel is the smartest living human; he always solves the intellectual problem. The jeopardy comes from implementation, ethics, the cost to others, and the consequences of invention.
 
 ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love for Aaron—and his love for her—give the technological spectacle a human center. **The books are scientific adventures, not romance novels.** Their relationship is conveyed in concern, autonomy, humor, disagreements, hard choices, and quiet scenes between enormous experiments.
@@ -13,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapter One | ✅ Full manuscript prose |
-| Book One Chapters 2–42 | ✍️ Not yet written |
+| Book One Chapters 1–29 | ✅ Full manuscript prose |
+| Book One Chapters 30–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -25,7 +28,35 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 
 - [Canon and scientific rules](docs/series-bible.md)
 - [42-chapter plan](docs/book-one-outline.md)
-- [Start reading: Chapter One](manuscript/book-01/chapter-01.md)
+- [Chapter One: A Very Bad Day for Physics](manuscript/book-01/chapter-01.md)
+- [Chapter Two: Three Clocks, One Lie](manuscript/book-01/chapter-02.md)
+- [Chapter Three: The Origin Room](manuscript/book-01/chapter-03.md)
+- [Chapter Four: Stop Means Explode](manuscript/book-01/chapter-04.md)
+- [Chapter Five: The Eleven-Minute Window](manuscript/book-01/chapter-05.md)
+- [Chapter Six: Classified as Impossible](manuscript/book-01/chapter-06.md)
+- [Chapter Seven: The Call They Can't Make](manuscript/book-01/chapter-07.md)
+- [Chapter Eight: The First Debt](manuscript/book-01/chapter-08.md)
+- [Chapter Nine: Heat Has to Go Somewhere](manuscript/book-01/chapter-09.md)
+- [Chapter Ten: An Invention with Opinions](manuscript/book-01/chapter-10.md)
+- [Chapter Eleven: The Visitors](manuscript/book-01/chapter-11.md)
+- [Chapter Twelve: A Note in His Handwriting](manuscript/book-01/chapter-12.md)
+- [Chapter Thirteen: The Quiet Room](manuscript/book-01/chapter-13.md)
+- [Chapter Fourteen: The Woman in the Glass](manuscript/book-01/chapter-14.md)
+- [Chapter Fifteen: Something That Counts](manuscript/book-01/chapter-15.md)
+- [Chapter Sixteen: The Offer](manuscript/book-01/chapter-16.md)
+- [Chapter Seventeen: A Signal Without a Sender](manuscript/book-01/chapter-17.md)
+- [Chapter Eighteen: The Observing Machine](manuscript/book-01/chapter-18.md)
+- [Chapter Nineteen: Cold Metal, Warm Hands](manuscript/book-01/chapter-19.md)
+- [Chapter Twenty: The Housekeeping Signal](manuscript/book-01/chapter-20.md)
+- [Chapter Twenty-One: A Courtesy Warning](manuscript/book-01/chapter-21.md)
+- [Chapter Twenty-Two: An Expensive Question](manuscript/book-01/chapter-22.md)
+- [Chapter Twenty-Three: The Dead Station](manuscript/book-01/chapter-23.md)
+- [Chapter Twenty-Four: The Curator's Arithmetic](manuscript/book-01/chapter-24.md)
+- [Chapter Twenty-Five: Twelve Seconds of Silence](manuscript/book-01/chapter-25.md)
+- [Chapter Twenty-Six: A City on the Diagram](manuscript/book-01/chapter-26.md)
+- [Chapter Twenty-Seven: Red Clearance](manuscript/book-01/chapter-27.md)
+- [Chapter Twenty-Eight: The Emergency Nobody Invented Yet](manuscript/book-01/chapter-28.md)
+- [Chapter Twenty-Nine: The Wrong Rescue](manuscript/book-01/chapter-29.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
@@ -46,9 +77,11 @@ A PhaseGate research test produces telemetry from an experiment Diesel has not b
 
 ## Contributing and checks
 
-The manuscript is source-controlled Markdown. Edit the canonical chapters and reference documents; don't manually modify generated PDFs. GitHub Actions will validate manuscript rules and, when dependencies and approved artwork are available, build the development edition.
+The manuscript is source-controlled Markdown. Edit the canonical chapters and reference documents; don't manually modify generated PDFs. GitHub Actions validates canon and chapter structure, builds the development PDF, and attaches both the reference-packed development PDF and the chapters-only listening PDF, plus a plain-English BUILD_REPORT.md to each build; the workflow summary also lists chapter count, manuscript words, current art blockers, and remaining work.
 
 See [production](docs/production.md) for reproducible build steps and [continuity](docs/continuity.md) for editorial checks.
 
 ---
 *Original fiction project — DPN Technology universe. Creative canon V3.1. Work in progress.*
+
+**Artwork import issue:** [Add exact approved cover to the repository](https://github.com/DevelopPioneerNavigate/the-diesel-paradox/issues/2).
