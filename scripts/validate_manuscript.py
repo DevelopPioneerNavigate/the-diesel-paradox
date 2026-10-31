@@ -23,6 +23,14 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-34.md":
+        check(3500<=len(story.split())<=5000,"Chapter 34 must be 3500-5000 full-prose words")
+        check("PRESERVE EXTERNAL REFERENCE. LOCAL LOSS ACCEPTABLE." in story and "THE FOURTH BOUNDARY IS MEASURED. ITS PURPOSE IS NOT." in story,
+              "Chapter 34 must preserve the unauthenticated external reference clue and evidence boundary")
+        check("No flood gate operation" not in story and "NO FLOOD GATE OPERATION" in story and "THIRD OPTION" in story,
+              "Chapter 34 must preserve locked-out equipment and the earned third-option setup")
+        check("I love you" in story and "ASTRA" in story,
+              "Chapter 34 must preserve genuine autonomous reciprocal love")
     if p.name=="chapter-33.md":
         check(3500<=len(story.split())<=5500,"Chapter 33 must be full-length polished prose")
         check("NO PERSONNEL EXPOSURE FOR ASSET RECOVERY" in story and "NO UNQUALIFIED FLOODING" in story,
