@@ -23,6 +23,14 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-30.md":
+        check(3500<=len(story.split())<=5000,"Chapter 30 must be 3500-5000 full-prose words")
+        check("Thirteen minutes of guaranteed margin" in story and "thirteen-minute envelope" in story.lower(),
+              "Chapter 30 must define a qualified thermal-band interval rather than an explosion timer")
+        check("Branch Nine" in story and "eleven minutes and twenty-one seconds" in story,
+              "Chapter 30 must document controlled abort and incomplete utility inspection")
+        check("PG-1 remained de-energized" in story and "ASTRA" in story,
+              "Chapter 30 must preserve de-energized hardware and ASTRA autonomy")
     if p.name=="chapter-29.md":
         check(3500<=len(story.split())<=5000,"Chapter 29 must be 3500-5000 full-prose words")
         check("RETURN-6" in story and "MECHANICAL LOAD TRANSFER ARRESTED WITHIN MEASUREMENT UNCERTAINTY" in story,
