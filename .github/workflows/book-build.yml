@@ -37,6 +37,7 @@ jobs:
         run: |
           python - <<'PY'
           from pypdf import PdfReader
+          from pathlib import Path
           p = "dist/The_Diesel_Paradox_Development_Edition.pdf"
           reader = PdfReader(p)
           assert len(reader.pages) >= 5, "PDF unexpectedly short"
@@ -54,10 +55,13 @@ jobs:
           assert "The Quiet Room" in audible, "Chapter Thirteen missing in listening PDF"
           assert "The Woman in the Glass" in audible, "Chapter Fourteen missing in listening PDF"
           assert "Something That Counts" in audible, "Chapter Fifteen missing in listening PDF"
+          assert "The Offer" in audible, "Chapter Sixteen missing in listening PDF"
+          assert "PUBLIC BOUNDARY WATCH" in audible, "Chapter Sixteen public-safety framework missing"
           assert "BOUNDARY-AWARE RESIDUAL ACCOUNTING" in audible, "Chapter Fifteen D-star test missing"
           assert "SESSION CLOSED BY PARTICIPANT" in audible, "ASTRA autonomy change missing from Chapter Fourteen"
           assert "NC-01" in audible and "COUPLING REDUCED" in audible, "Null Chamber observations missing"
-          assert len(listening.outline) >= 15, "Chapter bookmarks absent or incomplete"
+          chapter_count = len(list(Path("manuscript/book-01").glob("chapter-[0-9][0-9].md")))
+          assert len(listening.outline) >= chapter_count, f"Chapter bookmarks absent or incomplete: {len(listening.outline)} < {chapter_count}"
           assert "The Origin Room" in audible and "Three Clocks, One Lie" in audible
           assert "Series Bible" not in audible and "Forty-Two-Chapter Story Architecture" not in audible
           assert "ASTRA" in audible and "Aaron Diesel" in audible
