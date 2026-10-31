@@ -58,6 +58,8 @@ jobs:
           assert "The Offer" in audible, "Chapter Sixteen missing in listening PDF"
           assert "A Signal Without a Sender" in " ".join(audible.split()), "Chapter Seventeen missing in listening PDF"
           assert "The Observing Machine" in " ".join(audible.split()), "Chapter Eighteen missing in listening PDF"
+          assert "Cold Metal, Warm Hands" in " ".join(audible.split()), "Chapter Nineteen missing in listening PDF"
+          assert "HOUSEKEEPING OUTPUTS ARE INSTRUMENT RECORDS" in " ".join(audible.split()), "Chapter Nineteen provenance setup missing"
           assert "WM-09 / FIELD 27" in " ".join(audible.split()), "Chapter Eighteen survey reference missing"
           assert "KITE-3" in audible and "NO VERIFIED PROPAGATION PATH" in audible, "Chapter Seventeen evidence controls missing"
           assert "PUBLIC BOUNDARY WATCH" in audible, "Chapter Sixteen public-safety framework missing"
