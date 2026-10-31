@@ -87,7 +87,7 @@ They were two reasons to get Jian Rao out of bed.
 
 ***
 
-Aaron arrived at 03:08 with damp hair, an untucked black shirt, and a cup of coffee he had apparently remembered to make but not to drink.
+Aaron Diesel arrived at 03:08 with damp hair, an untucked black shirt, and a cup of coffee he had apparently remembered to make but not to drink.
 
 "How bad?" he asked.
 
