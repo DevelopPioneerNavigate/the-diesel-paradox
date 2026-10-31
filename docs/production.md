@@ -25,6 +25,7 @@ manuscript/book-01/
   chapter-12.md           # A Note in His Handwriting
   chapter-13.md           # The Quiet Room
   chapter-14.md           # The Woman in the Glass
+  chapter-15.md           # Something That Counts
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
