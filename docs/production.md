@@ -37,6 +37,7 @@ manuscript/book-01/
   chapter-24.md           # The Curator's Arithmetic
   chapter-25.md           # Twelve Seconds of Silence
   chapter-26.md           # A City on the Diagram
+  chapter-27.md           # Red Clearance
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
