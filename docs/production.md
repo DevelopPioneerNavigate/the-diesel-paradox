@@ -36,6 +36,7 @@ manuscript/book-01/
   chapter-23.md           # The Dead Station
   chapter-24.md           # The Curator's Arithmetic
   chapter-25.md           # Twelve Seconds of Silence
+  chapter-26.md           # A City on the Diagram
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
