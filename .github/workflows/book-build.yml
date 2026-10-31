@@ -57,6 +57,8 @@ jobs:
           assert "Something That Counts" in audible, "Chapter Fifteen missing in listening PDF"
           assert "The Offer" in audible, "Chapter Sixteen missing in listening PDF"
           assert "A Signal Without a Sender" in " ".join(audible.split()), "Chapter Seventeen missing in listening PDF"
+          assert "The Observing Machine" in " ".join(audible.split()), "Chapter Eighteen missing in listening PDF"
+          assert "WM-09 / FIELD 27" in " ".join(audible.split()), "Chapter Eighteen survey reference missing"
           assert "KITE-3" in audible and "NO VERIFIED PROPAGATION PATH" in audible, "Chapter Seventeen evidence controls missing"
           assert "PUBLIC BOUNDARY WATCH" in audible, "Chapter Sixteen public-safety framework missing"
           assert "BOUNDARY-AWARE RESIDUAL ACCOUNTING" in audible, "Chapter Fifteen D-star test missing"
