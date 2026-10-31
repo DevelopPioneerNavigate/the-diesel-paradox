@@ -31,6 +31,7 @@ manuscript/book-01/
   chapter-18.md           # The Observing Machine
   chapter-19.md           # Cold Metal, Warm Hands
   chapter-20.md           # The Housekeeping Signal
+  chapter-21.md           # A Courtesy Warning
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
