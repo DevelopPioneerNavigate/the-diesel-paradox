@@ -41,6 +41,7 @@ manuscript/book-01/
   chapter-28.md           # The Emergency Nobody Invented Yet
   chapter-29.md           # The Wrong Rescue
   chapter-30.md           # Thirteen Minutes to Empty
+  chapter-31.md           # The Promise
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
