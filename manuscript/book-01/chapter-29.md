@@ -1,5 +1,5 @@
-# Chapter Twenty-Nine
-## The Wrong Rescue
+# BOOK ONE: THE FIRST IMPOSSIBILITY
+## Chapter Twenty-Nine — The Wrong Rescue
 
 At 05:42, the first Directorate vehicle reached the gate at DPN-401.
 
