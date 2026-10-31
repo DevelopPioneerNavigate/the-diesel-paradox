@@ -641,9 +641,7 @@ For a long while they listened to the clock.
 
 ***
 
-At 21:03, an independent survey update reached the Bellwether incident store.
-
-Price's team had completed another measurement cycle. The roof-bearing movement had slowed but had not stopped. The groundwater head had stabilized after the pump transfer. That combination narrowed one ordinary explanation without eliminating it.
+At 21:03, Price reported that the evacuated tunnel was still moving, though more slowly, despite stabilized groundwater.
 
 The evacuation remained in force.
 
