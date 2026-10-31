@@ -27,6 +27,7 @@ manuscript/book-01/
   chapter-14.md           # The Woman in the Glass
   chapter-15.md           # Something That Counts
   chapter-16.md           # The Offer
+  chapter-17.md           # A Signal Without a Sender
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
