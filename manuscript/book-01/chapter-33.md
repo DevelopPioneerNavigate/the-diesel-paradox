@@ -1,4 +1,4 @@
-# Chapter Thirty-Three — The Price of Stability
+## Chapter Thirty-Three — The Price of Stability
 
 The first thing Aaron Diesel saw on the consequence map was a warehouse that did not belong to him.
 
