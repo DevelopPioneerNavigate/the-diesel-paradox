@@ -23,6 +23,10 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-27.md":
+        check(3500<=len(story.split())<=5000,"Chapter 27 must be 3500-5000 full-prose words")
+        check("BELLWETHER INCIDENT" in story and "NO VERIFIED BRM SIGNATURE" in story,
+              "Chapter 27 must preserve municipal and evidence boundaries")
 opening=(root/"manuscript/book-01/chapter-01.md").read_text(encoding="utf-8")
 check("LANTERN" in opening and "THANK YOU FOR NOT TURNING IT OFF" in opening,"Opening technical clues missing")
 print(f"Checked 42 planned chapters; {len(drafts)} complete manuscript chapters.")
