@@ -62,6 +62,8 @@ jobs:
           assert "The Housekeeping Signal" in " ".join(audible.split()), "Chapter Twenty missing in listening PDF"
           assert "A Courtesy Warning" in " ".join(audible.split()), "Chapter Twenty-One missing in listening PDF"
           assert "An Expensive Question" in " ".join(audible.split()), "Chapter Twenty-Two missing in listening PDF"
+          assert "The Dead Station" in " ".join(audible.split()), "Chapter Twenty-Three missing in listening PDF"
+          assert "CANDIDATE DETACHED OBJECT OR DEBRIS FEATURE" in " ".join(audible.split()), "Chapter Twenty-Three evidence classification missing"
           assert "MERIDIAN-9 / EPHEMERIS AND REFLECTION AUDIT" in " ".join(audible.split()), "Chapter Twenty-Two next investigation missing"
           assert "UNTRUSTED MATHEMATICAL ASSERTION" in " ".join(audible.split()), "Chapter Twenty-One evidence boundary missing"
           assert "REFERENCE_CORRECTION_HINT" in " ".join(audible.split()), "Chapter Twenty external housekeeping evidence missing"
