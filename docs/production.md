@@ -28,6 +28,7 @@ manuscript/book-01/
   chapter-15.md           # Something That Counts
   chapter-16.md           # The Offer
   chapter-17.md           # A Signal Without a Sender
+  chapter-18.md           # The Observing Machine
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
