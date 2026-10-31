@@ -16,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–17 | ✅ Full manuscript prose |
-| Book One Chapters 18–42 | ✍️ Not yet written |
+| Book One Chapters 1–18 | ✅ Full manuscript prose |
+| Book One Chapters 19–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -45,6 +45,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [Chapter Fifteen: Something That Counts](manuscript/book-01/chapter-15.md)
 - [Chapter Sixteen: The Offer](manuscript/book-01/chapter-16.md)
 - [Chapter Seventeen: A Signal Without a Sender](manuscript/book-01/chapter-17.md)
+- [Chapter Eighteen: The Observing Machine](manuscript/book-01/chapter-18.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
