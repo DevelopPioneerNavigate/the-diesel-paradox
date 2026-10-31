@@ -42,6 +42,7 @@ manuscript/book-01/
   chapter-29.md           # The Wrong Rescue
   chapter-30.md           # Thirteen Minutes to Empty
   chapter-31.md           # The Promise
+  chapter-32.md           # The First Laboratory Key
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
