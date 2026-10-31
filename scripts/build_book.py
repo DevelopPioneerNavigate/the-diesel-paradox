@@ -10,7 +10,7 @@ from reportlab.lib.utils import ImageReader
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, PageBreak, Spacer
+from reportlab.platypus import SimpleDocTemplate, Paragraph, PageBreak, Spacer, HRFlowable
 from pypdf import PdfReader, PdfWriter
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -78,6 +78,10 @@ def parse(source, st):
             flush()
             if re.fullmatch(r"[\s|:\-]+",s):continue
             result.append(Paragraph(markup(s),st["p"]))
+        elif s in ("***", "* * *"):
+            flush()
+            result.append(HRFlowable(width="24%", thickness=0.7, color=RED,
+                                     hAlign="CENTER", spaceBefore=9, spaceAfter=14))
         elif s=="---":
             flush();result.append(Spacer(1,12))
         else:buf.append(s)
