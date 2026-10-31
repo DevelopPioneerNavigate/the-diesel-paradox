@@ -16,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–31 | ✅ Full manuscript prose |
-| Book One Chapters 32–42 | ✍️ Not yet written |
+| Book One Chapters 1–32 | ✅ Full manuscript prose |
+| Book One Chapters 33–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -59,6 +59,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [Chapter Twenty-Nine: The Wrong Rescue](manuscript/book-01/chapter-29.md)
 - [Chapter Thirty: Thirteen Minutes to Empty](manuscript/book-01/chapter-30.md)
 - [Chapter Thirty-One: The Promise](manuscript/book-01/chapter-31.md)
+- [Chapter Thirty-Two: The First Laboratory Key](manuscript/book-01/chapter-32.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
