@@ -16,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–26 | ✅ Full manuscript prose |
-| Book One Chapters 27–42 | ✍️ Not yet written |
+| Book One Chapters 1–27 | ✅ Full manuscript prose |
+| Book One Chapters 28–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -54,6 +54,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [Chapter Twenty-Four: The Curator's Arithmetic](manuscript/book-01/chapter-24.md)
 - [Chapter Twenty-Five: Twelve Seconds of Silence](manuscript/book-01/chapter-25.md)
 - [Chapter Twenty-Six: A City on the Diagram](manuscript/book-01/chapter-26.md)
+- [Chapter Twenty-Seven: Red Clearance](manuscript/book-01/chapter-27.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
