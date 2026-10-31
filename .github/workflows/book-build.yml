@@ -53,9 +53,11 @@ jobs:
           assert "NULL CHAMBER" in audible, "Null Chamber setup absent from Chapter Twelve"
           assert "The Quiet Room" in audible, "Chapter Thirteen missing in listening PDF"
           assert "The Woman in the Glass" in audible, "Chapter Fourteen missing in listening PDF"
+          assert "Something That Counts" in audible, "Chapter Fifteen missing in listening PDF"
+          assert "BOUNDARY-AWARE RESIDUAL ACCOUNTING" in audible, "Chapter Fifteen D-star test missing"
           assert "SESSION CLOSED BY PARTICIPANT" in audible, "ASTRA autonomy change missing from Chapter Fourteen"
           assert "NC-01" in audible and "COUPLING REDUCED" in audible, "Null Chamber observations missing"
-          assert len(listening.outline) >= 14, "Chapter bookmarks absent or incomplete"
+          assert len(listening.outline) >= 15, "Chapter bookmarks absent or incomplete"
           assert "The Origin Room" in audible and "Three Clocks, One Lie" in audible
           assert "Series Bible" not in audible and "Forty-Two-Chapter Story Architecture" not in audible
           assert "ASTRA" in audible and "Aaron Diesel" in audible
