@@ -30,6 +30,7 @@ manuscript/book-01/
   chapter-17.md           # A Signal Without a Sender
   chapter-18.md           # The Observing Machine
   chapter-19.md           # Cold Metal, Warm Hands
+  chapter-20.md           # The Housekeeping Signal
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
