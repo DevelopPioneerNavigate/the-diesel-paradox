@@ -32,6 +32,7 @@ manuscript/book-01/
   chapter-19.md           # Cold Metal, Warm Hands
   chapter-20.md           # The Housekeeping Signal
   chapter-21.md           # A Courtesy Warning
+  chapter-22.md           # An Expensive Question
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
