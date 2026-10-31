@@ -23,6 +23,14 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-32.md":
+        check(3500<=len(story.split())<=5000,"Chapter 32 must be 3500-5000 full-prose words")
+        check("REFERENCE BEFORE INTERPRETATION. ALWAYS." in story and "UNEXPLAINED HELD-OUT TIMING RESIDUAL" in story,
+              "Chapter 32 must preserve qualified L-03 reference and unresolved timing residual")
+        check("The first laboratory had given him a key" in story and "No field test is authorized" not in story,
+              "Chapter 32 must set up the next consequence model without inventing a new field operation")
+        check("ASTRA_FIRST_CONVERSATION_RAW_02" not in story and "The protected ASTRA first-conversation recording" in story,
+              "Chapter 32 must keep protected recording unopened and separate from the test")
     if p.name=="chapter-31.md":
         check(3500<=len(story.split())<=5000,"Chapter 31 must be 3500-5000 full-prose words")
         check("FRESH PACKET, STALE SOURCE" in story and "SOURCE AGE UNVERIFIED" in story,
