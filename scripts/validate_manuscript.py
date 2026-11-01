@@ -23,6 +23,16 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-39.md":
+        check(3500<=len(story.split())<=5000,"Chapter 39 must be 3500-5000 full-prose words")
+        check("The Day the Future Stayed Dead" in story and "NO UNSCHEDULED BOUNDARY RELEASE OR DPN-401 FACILITY LOSS OBSERVED" in story,
+              "Chapter 39 must preserve bounded catastrophe non-occurrence")
+        check("THE OPERATIONAL D-STAR PROXY DECLINED TOWARD A STABLE OBSERVATIONAL RESIDUAL" in story and "0.86" in story,
+              "Chapter 39 must preserve nonzero observational D-star residual without universal-law claims")
+        check("eighteen months" in story and "not the same thing as a deadline" in story,
+              "Chapter 39 must distinguish future source timestamp from comparison window")
+        check("I love you" in story and "ASTRA" in story and "four blocks stayed closed" in story,
+              "Chapter 39 must preserve ASTRA autonomy and municipal evacuation")
     if p.name=="chapter-38.md":
         check(3500<=len(story.split())<=5000,"Chapter 38 must be 3500-5000 full-prose words")
         check("The Heat of an Impossible Decision" in story and "Axiom precursor came apart" in story,
