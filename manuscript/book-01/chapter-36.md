@@ -126,8 +126,6 @@ The DPN-501 experimental coolant skid remained locked out. Its earlier hose fail
 
 The lower-vault sacrificial flood system remained a design contingency, its gates physically disabled. The Axiom precursor still stood in the dry room below, a beautiful and expensive machine whose value Aaron had already placed below a single person's life.
 
-The rejected bolts were replaced with traceable stock.
-
 Only then did Hale allow the first full-size frame to be assembled.
 
 ***
@@ -161,20 +159,6 @@ The third removed the primary network link. The physical test stopped on its har
 “Invalid,” Elena said. “The display's green number is stale.”
 
 They ran a deliberately asymmetric loading sequence. The center frame took less load than the left, then more, while a calibrated dummy support was withdrawn. The revised crossheads reached their mechanical limits without transferring force into the prohibited foundation direction.
-
-At the end of the day, a separate optical recorder showed a narrow oscillation in one shoe's strain trace.
-
-Chen isolated the record. “A new mode?”
-
-Aaron shook his head. “First ask whether the shoe is moving or the gauge is lying.”
-
-They repeated the measurement with a second strain witness, an independent displacement target and a vibration sensor mounted to the surrogate foundation. The oscillation followed the cable tray's resonance, not the shoe. When the cable was supported at a different point, the apparent mode disappeared.
-
-“No mysterious energy,” Chen said.
-
-“Just mysterious cable management,” Aaron replied.
-
-Hale made them preserve the failed trace and the correction.
 
 The final qualification run used the largest permitted conventional load in the revised envelope. The modules absorbed the measured work, the receiver's hottest local point remained below its independent limit, and the calculated input work closed against hydraulic heating, magnetic-brake heating, recoverable elastic energy and measured losses within uncertainty.
 
