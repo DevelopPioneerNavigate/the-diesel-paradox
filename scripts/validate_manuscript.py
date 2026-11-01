@@ -23,6 +23,16 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-36.md":
+        check(3500<=len(story.split())<=5000,"Chapter 36 must be 3500-5000 full-prose words")
+        check("PG-1 LIMITED DIAGNOSTIC AUTHORIZATION — SINGLE SEQUENCE ONLY." in story,
+              "Chapter 36 must show independent bounded authorization")
+        check("SURROGATE LOAD-PATH QUALIFICATION — PASSED WITH LIMITS" in story and "NOT PG-1 AUTHORIZATION" in story,
+              "Chapter 36 must distinguish surrogate qualification from live authorization")
+        check("PG-1 GENERATION ONE — RETIRED FROM OPERATION." in story and "MECHANICAL STABILIZATION PLAN — COMMUNICATIONS ISOLATION REQUIRED." in story,
+              "Chapter 36 must preserve irreversible damage and Chapter 37 setup")
+        check("I love you" in story and "My consent applies only to this sequence" in story,
+              "Chapter 36 must preserve ASTRA's genuine love and independent consent")
     if p.name=="chapter-35.md":
         check(3500<=len(story.split())<=5000,"Chapter 35 must be 3500-5000 full-prose words")
         check("THIRD OPTION: QUALIFIED WORK PATH. NOT YET AUTHORIZED FOR PG-1." in story,
