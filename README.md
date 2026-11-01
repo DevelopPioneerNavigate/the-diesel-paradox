@@ -16,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–34 | ✅ Full manuscript prose |
-| Book One Chapters 35–42 | ✍️ Not yet written |
+| Book One Chapters 1–35 | ✅ Full manuscript prose |
+| Book One Chapters 36–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -62,6 +62,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [Chapter Thirty-Two: The First Laboratory Key](manuscript/book-01/chapter-32.md)
 - [Chapter Thirty-Three: The Price of Stability](manuscript/book-01/chapter-33.md)
 - [Chapter Thirty-Four: The Fourth Boundary](manuscript/book-01/chapter-34.md)
+- [Chapter Thirty-Five: Third Option](manuscript/book-01/chapter-35.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
