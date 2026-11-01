@@ -18,13 +18,13 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–41 | ✅ Full manuscript prose |
-| Book One Chapter 42 | ✍️ Not yet written |
+| Book One Chapters 1–42 | ✅ Full first-draft manuscript prose (42/42) |
+| Book One editorial / copyediting | 🛠️ Outstanding independent full-book review |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | ✅ Exact lossless original restored for automated PDFs from checksum-verified source parts; high-quality JPEG is a repository preview only |
 
-**Do not market this as a complete novel.** The first publication milestone is a *development edition*, not the final Book One manuscript.
+**Book One's complete 42-chapter first draft is written.** This is a draft-complete milestone, **not** a publication-ready illustrated edition. The manuscript requires a full editorial/canon review, proofing, artwork signoff, final production quality control and creator release approval.
 
 ## Read the project
 
@@ -71,6 +71,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [Chapter Thirty-Nine: The Day the Future Stayed Dead](manuscript/book-01/chapter-39.md)
 - [Chapter Forty: A Bill from the Universe](manuscript/book-01/chapter-40.md)
 - [Chapter Forty-One: The Room That Wasn't Empty](manuscript/book-01/chapter-41.md)
+- [Chapter Forty-Two: The Observer at the Door](manuscript/book-01/chapter-42.md)
+- [Final draft editorial and production audit](docs/book-one-draft-audit.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
