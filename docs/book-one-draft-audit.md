@@ -39,7 +39,7 @@
 
 ## Specific editorial watch items
 1. **Length/pacing:** chapters listed above exceed or narrowly undershoot the preferred 3,500–5,000 target. Assess their dramatic purpose and trim/expand only if doing so improves flow.
-2. **Name consistency:** the continuity register includes an **Elena Mora / Elena Morales** variation in older material. Review all canonical manuscript occurrences and choose one locked spelling before copyedit; do not silently retcon other character identity details.
+2. **Name consistency (fixed in pre-merge pass):** the same engineer was called **Elena Mora** in earlier chapters and **Elena Morales** in Chapters 29–39. All eleven late-chapter manuscript references and five continuity-register references have been normalized to **Elena Mora**. Final line edit should still verify remaining nickname/title references.
 3. **Scientific language:** avoid describing a candidate decoder, historical reference chart or bounded survival interval as proof of intentional future messaging. Differentiate measured response, model assumptions, observations and interpretations at every reveal.
 4. **Chapter 42 data selection:** the new witness-first decoder follows a clue seen before the transform was proposed. The manuscript rightly marks this as hypothesis generation and uses partial blinding. Check if prose readers will understand why the final decoding is persuasive yet not definitive.
 5. **ASTRA and consent:** keep first-conversation raw archive `ASTRA_FIRST_CONVERSATION_RAW_02` sealed until a future consensual, provenance-qualified storyline intentionally revisits it. Respect that an AI duplicate is not automatically the same individual under Canon R5.
