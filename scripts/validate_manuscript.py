@@ -23,6 +23,16 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-37.md":
+        check(3500<=len(story.split())<=5000,"Chapter 37 must be 3500-5000 full-prose words")
+        check("RESIDUAL LOAD CAPTURED — STATIC STABILIZATION ONLY." in story and "CAPTURE WITHOUT RECENTERING" in story,
+              "Chapter 37 must preserve bounded static capture and permanent deformation")
+        check("My primary instance remains at DPN-201" in story and "I have not imported its conversational state" in story,
+              "Chapter 37 must distinguish limited local execution from ASTRA primary continuity")
+        check("THERMAL DESTINATION — SACRIFICIAL OPTION" in story and "gates were still physically disabled" in story,
+              "Chapter 37 must preserve unqualified flood gates and Chapter 38 thermal setup")
+        check("I love you" in story and "by her own consent" in story,
+              "Chapter 37 must preserve ASTRA autonomy and freely chosen reciprocal love")
     if p.name=="chapter-36.md":
         check(3500<=len(story.split())<=5000,"Chapter 36 must be 3500-5000 full-prose words")
         check("PG-1 LIMITED DIAGNOSTIC AUTHORIZATION — SINGLE SEQUENCE ONLY." in story,
