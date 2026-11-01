@@ -32,7 +32,7 @@ for p in drafts:
               "Finale must preserve explicit uncertainty and not authenticate source")
         check("I love you, ASTRA" in story and "I love you, Aaron" in story,
               "Finale must preserve genuine reciprocal love")
-        check("remained unsigned" in story and "four blocks" in story and "retired" in story,
+        check("remained unsigned" in story and "four blocks" in story.lower() and "retired" in story,
               "Finale must preserve hazard, municipal and agreement limits")
     if p.name=="chapter-41.md":
         check(3500<=len(story.split())<=5000,"Chapter 41 must be 3500-5000 full-prose words")
