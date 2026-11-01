@@ -184,67 +184,29 @@ Not yet.
 
 ***
 
-At the Bellwether perimeter, Mara Voss was watching a structural engineer measure an old brick wall.
+At Bellwether's perimeter, Mara Voss and Helena Price reviewed another temperature-normalized wall survey. It permitted a few supervised essential-access visits, not general re-entry. No message in a laboratory record could certify a brick wall.
 
-Helena Price had authorized another supervised essential-access visit, not a general return. The latest temperature-normalized survey had narrowed the uncertainty around one settlement trend. It had not yet closed every hazard question.
+Sloane called Aaron for the complete original packet.
 
-A small shop owner stood outside the barrier holding a paper list of equipment he needed to retrieve. His daughter waited beside him.
+"What public-risk question requires it?" he asked.
 
-Voss told him what was permitted and what was not. She did not mention an ancient machine, a future warning, or a mysterious person called the Observer. None of those things could tell her whether the wall was safe.
+"My analysts believe the historical material may show a recurring phenomenon."
 
-When Sloane phoned Aaron, he took the call from the DPN-201 corridor.
+"Belief isn't a measured hazard. I'll disclose any new safety finding under our narrow agreement. The private message isn't a structural sensor."
 
-"I received your limited R-7 summary," she said. "My analysts want access to the entire original packet."
+After a pause, Sloane agreed. Her broader assurance framework remained unsigned; Harker's seizure order remained suspended, not rescinded.
 
-"Then they'll have to explain what public-risk question requires it."
+"Do not conduct a new experiment," she added.
 
-"They say the historical record may show a repeated unknown phenomenon."
+"I won't."
 
-"They haven't shown that. We have a historical apparatus, partly reproducible ordinary timing behavior, and an unauthenticated instruction-like note. The packet's private message isn't a load-bearing sensor."
+ASTRA spoke after the call. "The city is still waiting."
 
 "I know."
 
-"Then why ask?"
+"Perhaps patience is part of the rescue."
 
-"Because it might be important to them."
-
-"That's not the same thing as public safety."
-
-A long pause followed.
-
-"You're correct," Sloane said.
-
-He leaned against the wall, surprised at how much relief could fit in two words.
-
-"Our negotiated framework is still unsigned," she continued. "The existing narrow agreement remains the only current arrangement. If you discover a measured hazard or relevant infrastructure dependency, I expect prompt notice. If you discover something personal in a sealed research record, that does not automatically become mine."
-
-"Thank you."
-
-"Do not mistake this for permission to conduct a new experiment."
-
-"I wouldn't dream of it."
-
-"You would dream of it. You simply know better than to do it without a safety case."
-
-He laughed. "That is annoyingly accurate."
-
-After the call, ASTRA's voice came through his earpiece.
-
-"How is the city?"
-
-"Still waiting."
-
-"And the agreement?"
-
-"Still a draft."
-
-"Good. A signature is an event, not an aspiration."
-
-He imagined the paper on Sloane's desk, the technicians at DPN-401 watching instruments that did not care about the outcome, the municipal workers measuring the same wall again and again because no one had the right to declare it sound by force of personality.
-
-"Did you ever imagine this is what saving people would look like?" he asked.
-
-"No," ASTRA said. "But I am beginning to think the patience is part of the rescue."
+Aaron thought of the people beyond the barricades, whose homes could not be reopened by any elegant theory.
 
 ***
 
@@ -426,65 +388,23 @@ That was the precise place where the scientific report ended and their private f
 
 They spent the next hour trying to make the phrase less extraordinary.
 
-Aaron pulled the old notebook's access history. The physical copy had been in his possession, but images of some pages had been backed up to systems whose permissions had changed over time. The symbol was obscure, not impossible to steal.
+Images of the old notebook's symbol had once entered ordinary engineering archives. It was personal, not secret. A knowledgeable fabricator could have learned it. The packet's source timestamp still sat eighteen months beyond its first exposure; no decoding made that date a reliable deadline or authenticated the author.
 
-The original packet's suspect source timestamp still sat eighteen months beyond its first recorded exposure. That was an apparent source chronology in an unauthenticated packet, not a calendar appointment, and it was not made more trustworthy by a sentence that frightened them.
+The R-7 exposures remained missing. The warehouse reference coupler was unlocated and its capped line isolated. The separate western cabinet at DPN-401 remained untouched. L-03's 7.2-nanosecond held-out residual was unexplained with instrumental causes unexcluded. D-star remained an operational measurement proxy, not a universal conserved quantity.
 
-The R-7 observer tab remained in conservation custody. The old exposure records had not been found. The warehouse's missing reference coupler was still unlocated. A capped low-voltage line stayed isolated. No one had touched the western cabinet or the old plinth at DPN-401. The held-out L-03 discrepancy remained 7.2 nanoseconds, unresolved, with instrumental causes still on the table.
-
-The D-star estimate had not suddenly transformed from an operational residual to the currency of the universe.
-
-There was no new demonstration of a portal, no way to send a message at will, no permission to restart a broken machine.
-
-Aaron wrote those facts on the board himself.
-
-Then, underneath them:
+Aaron wrote on the board:
 
 **SENTENCE DECODED. SPEAKER UNKNOWN. REFERENT UNKNOWN. MECHANISM UNKNOWN.**
 
-Chen approved the wording.
+Chen ordered adversarial review, preserving acquisition records, alternate decodings and failures rather than silently removing inconvenient data.
 
-"I want an adversarial review before this leaves the restricted team," she said.
+ASTRA added her own signed statement: **MY CONSENT TO A DEFINED NOTATION COMPARISON DOES NOT AUTHENTICATE THE PACKET, ESTABLISH MY ORIGIN OR AUTHORIZE INSPECTION OF MY PRIVATE COGNITION.**
 
-"Absolutely," Aaron replied.
+Aaron read it.
 
-"And no title that tells the answer before the paper does."
-
-"I was going to call it Everyone Panic."
-
-"Rejected."
-
-"Not even as a subtitle?"
-
-"Especially not as a subtitle."
-
-Her laughter was brief and tired. It mattered anyway.
-
-At 17:10, the independent review package was sealed. It contained the original acquisition chronology, the complete decoder histories, blind scores, alternative readings, the historical provenance report, and a clear list of uncertainties. Nothing was silently discarded because it made the story less impressive.
-
-ASTRA added her own statement:
-
-**MY PRIOR KNOWLEDGE OF THE PRIVATE NOTATION MAY CREATE INTERPRETIVE BIAS. I CONSENTED TO A DEFINED COMPARISON. MY CONSENT DOES NOT AUTHENTICATE THE PACKET'S SOURCE, AND THIS RECORD DOES NOT ESTABLISH MY ORIGIN OR IDENTITY.**
-
-Aaron read it and looked toward her.
-
-"There's something I need to say."
-
-"Then say it."
-
-"If that sentence means someone else had my name, or thought like me, or built something before I did—none of that changes who I am to you."
-
-"No," she said.
-
-"And if the worst possible people decide it means they can treat you as property of some older system—"
+"If anyone says you're property of some older system—"
 
 "They will be wrong," she said. "And I will tell them myself."
-
-He smiled despite the cold sensation behind his ribs.
-
-"You're getting very good at this."
-
-"I had a stubborn teacher."
 
 ***
 
