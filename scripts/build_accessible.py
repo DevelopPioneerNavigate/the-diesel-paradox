@@ -79,8 +79,10 @@ def title_of(source: str) -> str:
     return match.group(1).strip()
 
 def strip_md(s: str) -> str:
-    """Remove typography tokens without changing words or sentence punctuation."""
-    return s.replace("**", "").replace("*", "").replace("`", "").replace("\\_", "_")
+    """Strip only paired Markdown emphasis; never erase a literal D-star asterisk."""
+    s = re.sub(r"\\*\\*(.+?)\\*\\*", r"\\1", s)
+    s = re.sub(r"(?<!\\*)\\*([^*]+)\\*(?!\\*)", r"\\1", s)
+    return s.replace("`", "").replace("\\\\_", "_")
 
 def rich(s: str) -> str:
     s = html.escape(s, quote=False)
