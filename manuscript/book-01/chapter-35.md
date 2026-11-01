@@ -260,7 +260,7 @@ But the false positive mattered. They kept it in the report. A system intended t
 
 ***
 
-By early afternoon, the prototype had completed thirty low-energy cycles, including deliberate faults.
+By early afternoon, the test plan called for thirty low-energy cycles, including deliberate faults.
 
 The hydraulic relief valve stuck open in one test, leaving the magnetic brake and mechanical catch to arrest the carriage within the guarded envelope. In another, they disconnected the brake witness sensor and confirmed that the independent local controller declared the measurement stale rather than displaying the last good force as current. A simulated communications partition darkened the central screen but did not change the fixture's hardwired trip state.
 
