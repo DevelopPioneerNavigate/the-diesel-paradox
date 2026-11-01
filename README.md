@@ -18,8 +18,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–40 | ✅ Full manuscript prose |
-| Book One Chapters 41–42 | ✍️ Not yet written |
+| Book One Chapters 1–41 | ✅ Full manuscript prose |
+| Book One Chapter 42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | ✅ Exact lossless original restored for automated PDFs from checksum-verified source parts; high-quality JPEG is a repository preview only |
@@ -70,6 +70,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [Chapter Thirty-Eight: The Heat of an Impossible Decision](manuscript/book-01/chapter-38.md)
 - [Chapter Thirty-Nine: The Day the Future Stayed Dead](manuscript/book-01/chapter-39.md)
 - [Chapter Forty: A Bill from the Universe](manuscript/book-01/chapter-40.md)
+- [Chapter Forty-One: The Room That Wasn't Empty](manuscript/book-01/chapter-41.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
