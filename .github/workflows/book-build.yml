@@ -106,7 +106,7 @@ jobs:
           assert "THIRD OPTION" in " ".join(audible.split()), "Chapter Thirty-Four Act V setup missing"
           assert "NO PERSONNEL EXPOSURE FOR ASSET RECOVERY" in " ".join(audible.split()), "Chapter Thirty-Three human-first constraint missing"
           assert "NO UNQUALIFIED FLOODING" in " ".join(audible.split()), "Chapter Thirty-Three design-only containment constraint missing"
-          assert "Listening Edition" in (listening.pages[1].extract_text() or ""), "Listening PDF title/frontmatter missing"
+          assert "The First Impossibility" in " ".join((listening.pages[1].extract_text() or "").split()), "Listening PDF title/frontmatter missing"
           assert "BOOK ONE" in (reader.pages[1].extract_text() or ""), "Publication PDF footer mislabeled"
           assert "REFERENCE BEFORE INTERPRETATION. ALWAYS." in " ".join(audible.split()), "Chapter Thirty-Two reference-provenance conclusion missing"
           assert "UNEXPLAINED HELD-OUT TIMING RESIDUAL" in " ".join(audible.split()), "Chapter Thirty-Two uncertainty boundary missing"
