@@ -18,7 +18,7 @@ count=len(chapters)
 words=sum(counts.values())
 pdf=ROOT/args.pdf
 listening=ROOT/"dist/The_Diesel_Paradox_Listening_Edition.pdf"
-approved=ROOT/"assets/cover/approved-cover.png"
+approved_assets=[ROOT/"assets/cover/approved-cover.png", ROOT/"assets/cover/approved-cover.jpg"]
 report=[
 "# The Diesel Paradox — Build Report",
 "",
@@ -47,10 +47,10 @@ report += [
 "- The story is written as scientific adventure with ASTRA as an independent character.",
 "",
 "## Art and remaining tasks",
-("Approved cover: PRESENT in source assets." if approved.exists() else
- "Approved cover: NOT YET IMPORTED into GitHub. PDF explicitly uses a placeholder. See Issue #2."),
+("Approved cinematic cover: PRESENT in repository; publishing enforces approved artwork checksums." if any(path.exists() for path in approved_assets) else
+ "Approved cinematic cover: MISSING; publishing must fail until restored."),
 f"- Chapters remaining to write: **{42-count}**.",
-"- Approved cover import and scene-accurate interior illustrations.",
+"- Optional import of original lossless approved PNG (Issue #2) and scene-accurate interior illustrations.",
 "- Editorial quality review and typesetting after all chapters are finished.",
 "",
 "## What the passing build means",

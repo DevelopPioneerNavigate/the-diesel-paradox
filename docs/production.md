@@ -52,7 +52,7 @@ manuscript/book-01/
   chapter-39.md           # The Day the Future Stayed Dead
 assets/
   brand/phasegate-blueprint.svg
-  cover/                  # Approved full-resolution cover goes here
+  cover/approved-cover.jpg # Approved composition recovered from early edition; SHA-256 pinned
 scripts/
   validate_manuscript.py
   build_book.py
@@ -82,13 +82,9 @@ A GitHub Actions workflow validates the canon and produces **the reference devel
 
 The creator approved an image showing Diesel at his futuristic laboratory controls, with ASTRA as a holographic technological presence, and an immense PhaseGate / spacetime anomaly. The composition reads as high-stakes technological science fiction, not a romance book cover.
 
-The approved artwork currently exists in the creator's ChatGPT development edition. Place its full-resolution source at:
+**Cover restoration:** The original cinematic composition was recovered from the creator-approved chapters 1–25 edition and is now committed at `assets/cover/approved-cover.jpg` as a visually faithful, high-quality JPEG derivative (1024 × 1536). This is the same approved illustration, not a generated or redesigned cover. The exact lossless extracted PNG is available separately to the creator and may be imported later at `assets/cover/approved-cover.png` (tracked by Issue #2).
 
-```text
-assets/cover/approved-cover.png
-```
-
-The PDF builder automatically uses this exact file when present. Until it is in the repo, the builder uses an explicit **development placeholder** cover rather than falsely claiming the real asset is embedded.
+The PDF builder prefers the **verified PNG** when present and otherwise uses the committed **verified JPEG**. Both accepted image files are SHA-256 locked in `scripts/build_book.py`. **Missing or altered artwork must fail the build; never silently publish a placeholder or substitute a new cover.** The publishing job also checks both PDFs contain a cover image.
 
 ### Artwork conventions
 

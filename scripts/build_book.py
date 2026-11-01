@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Create a single dark DPN development-edition PDF; no AI, SaaS or paid API."""
+"""Create DPN book editions with the creator-approved cinematic cover."""
 from pathlib import Path
 from io import BytesIO
-import argparse, html, re, math
+import argparse, html, re, hashlib
 from reportlab.pdfgen.canvas import Canvas
 from reportlab.lib import colors
 from reportlab.lib.units import inch
@@ -93,26 +93,22 @@ def make_cover():
     c=Canvas(data,pagesize=SIZE)
     w,h=SIZE
     c.setFillColor(BG);c.rect(0,0,w,h,fill=1,stroke=0)
-    image=ROOT/"assets/cover/approved-cover.png"
-    if image.exists():
-        img=ImageReader(str(image));iw,ih=img.getSize()
-        scale=max(w/iw,h/ih);dw,dh=iw*scale,ih*scale
-        c.drawImage(img,(w-dw)/2,(h-dh)/2,width=dw,height=dh,mask="auto")
-    else:
-        c.setStrokeColor(RED)
-        for radius in (100,125,154):
-            c.setLineWidth(3 if radius==154 else 1)
-            c.circle(w/2,h*.45,radius,stroke=1,fill=0)
-        for i in range(12):
-            angle=2*math.pi*i/12
-            c.circle(w/2+154*math.cos(angle),h*.45+154*math.sin(angle),2,stroke=1,fill=0)
-        c.setFillColor(colors.white);c.setFont("Helvetica-Bold",32)
-        c.drawCentredString(w/2,h-125,"THE DIESEL")
-        c.drawCentredString(w/2,h-165,"PARADOX")
-        c.setFont("Helvetica",10)
-        c.drawCentredString(w/2,h-193,"BOOK ONE: THE FIRST IMPOSSIBILITY")
-        c.setFillColor(colors.HexColor("#ffa4b7"));c.setFont("Helvetica",8)
-        c.drawCentredString(w/2,58,"DEVELOPMENT PLACEHOLDER: APPROVED COVER NOT YET IMPORTED")
+    # The original approved image was recovered from the creator's early edition.
+    # Prefer its lossless source; retain the approved, visually faithful JPEG
+    # derivative as a repository-backed fallback. Neither may be substituted.
+    allowed=(
+        (ROOT/"assets/cover/approved-cover.png", "5ba1bd629ff9b7b86bbcc4e1a2f956f4965078989fe46e66d508d6f6cf976e06"),
+        (ROOT/"assets/cover/approved-cover.jpg", "76ee9e7e6db1e39eb4a26ad2b47de3d26de7688788ccf789e6cff5cc34341567"),
+    )
+    found=[(path,digest) for path,digest in allowed if path.is_file()]
+    if not found:
+        raise FileNotFoundError("Creator-approved cover is missing. Do not publish a placeholder; restore assets/cover/approved-cover.jpg or the verified PNG source.")
+    image, expected_sha256=found[0]
+    if hashlib.sha256(image.read_bytes()).hexdigest()!=expected_sha256:
+        raise ValueError("Approved cover artwork changed unexpectedly; publishing stopped until the creator approves a new image.")
+    img=ImageReader(str(image));iw,ih=img.getSize()
+    scale=max(w/iw,h/ih);dw,dh=iw*scale,ih*scale
+    c.drawImage(img,(w-dw)/2,(h-dh)/2,width=dw,height=dh,mask="auto")
     c.showPage();c.save()
     return data.getvalue()
 

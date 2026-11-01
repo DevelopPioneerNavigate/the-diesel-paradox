@@ -20,7 +20,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 | Book One Chapters 40–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
-| Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
+| Approved cinematic cover | ✅ Original approved composition restored in repository (verified high-quality JPEG); optional lossless PNG import pending |
 
 **Do not market this as a complete novel.** The first publication milestone is a *development edition*, not the final Book One manuscript.
 
@@ -94,4 +94,4 @@ See [production](docs/production.md) for reproducible build steps and [continuit
 ---
 *Original fiction project — DPN Technology universe. Creative canon V3.1. Work in progress.*
 
-**Artwork import issue:** [Add exact approved cover to the repository](https://github.com/DevelopPioneerNavigate/the-diesel-paradox/issues/2).
+**Artwork provenance:** The approved cover has been recovered from an earlier edition and restored to the automated PDF pipeline. [Issue #2 tracks optional import of its exact lossless PNG source](https://github.com/DevelopPioneerNavigate/the-diesel-paradox/issues/2). A checksum gate prevents unapproved cover substitutions.
