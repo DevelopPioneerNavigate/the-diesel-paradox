@@ -51,6 +51,7 @@ manuscript/book-01/
   chapter-38.md           # The Heat of an Impossible Decision
   chapter-39.md           # The Day the Future Stayed Dead
   chapter-40.md           # A Bill from the Universe
+  chapter-41.md           # The Room That Wasn't Empty
 assets/
   brand/phasegate-blueprint.svg
   cover/approved-cover.jpg  # Preview only: approved artwork
@@ -76,7 +77,7 @@ python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development.pdf --o
 
 A GitHub Actions workflow validates the canon and produces **the reference development PDF**, a **chapters-only listening PDF** with selectable text, and **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
 
-**Current manuscript:** 40 of 42 chapters drafted; Chapter 40 negotiates a still-unexecuted, independently reviewable public-safety framework with Sloane, protects ASTRA's autonomy, and proposes municipal compensation subject to financial/board approvals. The original packet remains preserved and unauthenticated. Two chapters remain. PG-1 remains retired, Axiom dismantled, municipal evacuation still in force; no new field restart, demonstrated D-star conservation/transfer, or municipal re-entry authorization is implied by a passing build.
+**Current manuscript:** 41 of 42 chapters drafted; Chapter 41 recovers an independently corroborated 1984 R-7 reference-response log from a sealed warehouse calibration annex adjoining DPN-001. Its Curator-like notation is suggestive but unauthenticated; ordinary timing-conditioner behavior explains several signatures, and the L-03 7.2 ns residual remains unresolved. The original future packet remains physically preserved and unauthenticated. One chapter remains. The negotiated Directorate public-risk framework remains a draft, not executed. PG-1 remains retired, Axiom dismantled, municipal evacuation still in force; no new field restart, demonstrated D-star conservation/transfer, or municipal re-entry authorization is implied by a passing build.
 
 **Do not mistake successful PDF generation for manuscript completeness.** Unwritten chapters remain unwritten.
 
