@@ -44,7 +44,7 @@ He pushed his coffee away.
 
 Dr. Miriam Hale refused to let the discovery become a reason to relax a single lockout.
 
-She arrived at DPN-401 before nine, accompanied by Elena Morales and a survey contractor who had never worked for DPN. The contractor's independence mattered; so did the fact that his first question concerned access permits rather than the science-fiction rumors surrounding the facility.
+She arrived at DPN-401 before nine, accompanied by Elena Mora and a survey contractor who had never worked for DPN. The contractor's independence mattered; so did the fact that his first question concerned access permits rather than the science-fiction rumors surrounding the facility.
 
 The PhaseGate remained dark. Sector Six was physically locked out. The experimental DPN-501 coolant skid was unavailable. The thermal buffer had not recovered its lost reserve, the Branch Nine high point still contained trapped gas, and the air-cooled fan contactor remained tagged. The aborted utility inspection had not somehow become complete overnight.
 
