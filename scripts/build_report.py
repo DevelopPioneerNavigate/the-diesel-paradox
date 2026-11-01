@@ -42,7 +42,7 @@ report += [
 "",
 "## Checks",
 "- Manuscript numbering, continuity baseline, core characters and opening clues validated.",
-"- Chapter 36 limited authorization, irreversible PG-1 retirement and ASTRA consent checked when present.",
+"- Chapter 36 limited authorization and PG-1 retirement; Chapter 37 static capture and ASTRA local-continuity limits checked when present.",
 "- PDF rendered and text extraction verified.",
 "- The story is written as scientific adventure with ASTRA as an independent character.",
 "",
