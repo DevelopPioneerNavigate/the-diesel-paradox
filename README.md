@@ -21,7 +21,9 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 | Book One Chapters 1–42 | ✅ Full first-draft manuscript prose (42/42) |
 | Book One editorial / copyediting | 🛠️ Outstanding independent full-book review |
 | Full multi-book saga | 🧭 Series-level roadmap only |
-| Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
+| Illustrated development PDF | ✅ Automated reference build (not final release) |
+| Audio-friendly EPUB and continuous TXT | ✅ Reflowable chapters and TTS paragraph fidelity enforced by CI (pending run verification) |
+| Listening PDF (fixed-layout) | 🛠️ Rebuilt to omit running headers/footers and reduce page-break interruptions |
 | Approved cinematic cover | ✅ Exact lossless original restored for automated PDFs from checksum-verified source parts; high-quality JPEG is a repository preview only |
 
 **Book One's complete 42-chapter first draft is written.** This is a draft-complete milestone, **not** a publication-ready illustrated edition. The manuscript requires a full editorial/canon review, proofing, artwork signoff, final production quality control and creator release approval.
@@ -91,9 +93,22 @@ A PhaseGate research test produces telemetry from an experiment Diesel has not b
 - **Tone:** technically rich science fiction, dark humor, cosmic mystery, action, and emotional depth.
 - **Art direction:** charcoal and crimson industrial DPN command systems, colossal believable machines, spacetime anomalies, ASTRA as holographic operational intelligence; *not* romance-centric cover staging.
 
+## Accessible reading and audiobook app compatibility
+
+**For audiobook text-to-speech apps, import the EPUB**, not the decorative fixed-layout PDF. The EPUB uses one continuous XHTML paragraph per source paragraph, correct chapter navigation, reflowable reading order, and **no running headers/footers or fixed page breaks**. A continuous UTF-8 TXT edition is available for apps that do not support EPUB. The listening PDF is still offered for visual reading, but PDF pagination may be interpreted differently by third-party readers.
+
+The EPUB/TXT builder verifies and embeds the **existing approved cover** using the original SHA-256-pinned image parts. No substitute image is generated. Chapter source remains the canonical Markdown; build outputs are CI artifacts, not additional manually maintained manuscript copies.
+
+```bash
+python scripts/build_accessible.py
+python scripts/validate_accessible.py   # after the PDF build
+```
+
+**Audio QA:** CI compares the exact prose paragraphs of all 42 chapters in EPUB against source Markdown, verifies the TXT content, table of contents and cover integrity, checks PDF bookmark count and ensures repeated page-text headers are absent. Actual app playback still requires a spot test because PDF/EPUB reading engines differ. See [audio compatibility and editorial audit](docs/audio-compatibility-audit.md).
+
 ## Contributing and checks
 
-The manuscript is source-controlled Markdown. Edit the canonical chapters and reference documents; don't manually modify generated PDFs. GitHub Actions validates canon and chapter structure, builds the development PDF, and attaches both the reference-packed development PDF and the chapters-only listening PDF, plus a plain-English BUILD_REPORT.md to each build; the workflow summary also lists chapter count, manuscript words, current art blockers, and remaining work.
+The manuscript is source-controlled Markdown. Edit the canonical chapters and reference documents; don't manually modify generated PDFs. GitHub Actions validates canon and chapter structure, builds the reference PDF, repaired listening PDF, reflowable EPUB, continuous TXT and attaches them with a plain-English BUILD_REPORT.md to each build; the workflow summary also lists chapter count, manuscript words, current art blockers, and remaining work.
 
 See [production](docs/production.md) for reproducible build steps and [continuity](docs/continuity.md) for editorial checks.
 
