@@ -8,7 +8,7 @@ import os
 
 ROOT=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser()
-parser.add_argument("--pdf",default="dist/The_Diesel_Paradox_Development_Edition.pdf")
+parser.add_argument("--pdf",default="dist/The_Diesel_Paradox_Book_One.pdf")
 parser.add_argument("--out",default="dist/BUILD_REPORT.md")
 args=parser.parse_args()
 
@@ -25,12 +25,12 @@ report=[
 "",
 "**Built at (UTC):** "+datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"),
 "**Commit:** "+os.environ.get("GITHUB_SHA","local build"),
-"**Deliverable:** Full 42-chapter draft development and audiobook-friendly reading editions (not approved final publication)",
+"**Deliverable:** The Diesel Paradox — Book One (official published PDF, EPUB, TXT and optional listening PDF)",
 "",
 "## What is included",
 f"- Fully written chapters: **{count} of 42** ({count/42:.1%}).",
 f"- Manuscript: approximately **{words:,}** words.",
-"- Series bible Canon V3.1 and connected 42-chapter outline.",
+"- Public PDF is the novel only; series bible and planning documents are not included.",
 f"- PDF pages rendered: **{len(PdfReader(str(pdf)).pages)}**.",
 (f"- Listening-only pages rendered: **{len(PdfReader(str(listening)).pages)}**." if listening.exists() else "- Listening-only edition not generated."),
 "- Listening PDF, reflowable EPUB and plain-text reading editions contain only novel prose; no planning bible or outline.",
@@ -44,7 +44,7 @@ for name,word_count in counts.items():
 report += [
 "",
 "## Checks",
-"- Manuscript numbering, continuity baseline, core characters and opening clues validated.",
+"- All 42 chapters validated, publication PDF checked to exclude development labels, and accessible ebook prose verified against source.",
 "- Chapter 36 limited authorization and PG-1 retirement; Chapter 37 static capture; Chapter 38 Axiom sacrifice, qualified thermal receiver and bounded unloading checked when present.",
 "- PDF rendered and text extraction verified.",
 "- EPUB paragraph-by-paragraph manuscript parity, chapter navigation and approved cover integrity validated by an independent step.",
@@ -55,11 +55,11 @@ report += [
 ("Approved cinematic cover: exact lossless source PRESENT (verified in publishing pipeline)." if any(path.exists() for path in approved_assets) or all(p.exists() for p in lossless_parts) else
  "Approved cinematic cover: MISSING; publishing must fail until restored."),
 f"- Chapters remaining to write: **{42-count}**.",
-"- Optional consolidation of the exact original PNG into a single repository file (Issue #2); scene-accurate interior illustrations.",
-"- Editorial quality review and typesetting after all chapters are finished.",
+"- Approved cinematic cover exact bytes verified for official release; interior artwork beyond the approved cover may be added in a future illustrated update.",
+"- Reader feedback, long-form copyedits and any later illustration updates can be tracked for subsequent editions.",
 "",
 "## What the passing build means",
-"A successful build confirms the current draft produced PDFs, EPUB and TXT without the known extraction defects. It does not certify subjective performance in all audiobook apps or completion of copyediting, final illustrations or publisher approval.",
+"The automated build verifies the public novel PDF and accessible EPUB/TXT file integrity and text completeness. Individual text-to-speech applications can differ, and passing CI is not a human line-by-line literary edit.",
 "",
 ]
 out=ROOT/args.out
