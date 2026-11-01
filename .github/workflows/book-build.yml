@@ -54,6 +54,7 @@ jobs:
           assert "The First Debt" in audible and "Heat Has to Go Somewhere" in audible, "New Act II manuscript missing from listening PDF"
           assert "An Invention with Opinions" in audible and "The Visitors" in audible, "Latest Act II chapters missing from listening PDF"
           assert "The Room That Wasn't Empty" in " ".join(audible.split()), "Chapter Forty-One missing in listening PDF"
+          assert "The Observer at the Door" in " ".join(audible.split()), "Final Chapter Forty-Two missing in listening PDF"\n          assert "YOU WERE NOT THE FIRST AARON" in " ".join(audible.split()), "Observer finale message missing in listening PDF"
           assert "HISTORICAL PROVENANCE SUPPORTED" in " ".join(audible.split()), "Chapter Forty-One archival evidence classification missing"
           assert "MAINTAIN EXTERNAL REFERENCE UNDER LOSS OF DRIVE" in " ".join(audible.split()), "Chapter Forty-One historical log finding missing"
           assert "A Note in His Handwriting" in audible, "Chapter Twelve missing in listening PDF"
