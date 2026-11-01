@@ -40,7 +40,7 @@ Aaron sipped his cold coffee. "Excellent. A day when nobody tries to save a mach
 
 The local cell occupied a reinforced recess beside the service spine. It held an analog temperature recorder, an independently powered clock, a read-only digitizer, a folding desk, and a mechanical emergency exit that required no electricity. Aaron's job was to observe local data while the main fiber was disconnected. Qualified technicians would handle the conduit. His healing left forearm still prohibited hazardous physical work.
 
-Miriam Hale, the independent safety engineer, signed the permit only after Elena Morales walked the egress route and tested the emergency telephone. The cell was outside the restricted gallery. No one was allowed to confuse its isolation from the network with isolation from ordinary hazards.
+Miriam Hale, the independent safety engineer, signed the permit only after Elena Mora walked the egress route and tested the emergency telephone. The cell was outside the restricted gallery. No one was allowed to confuse its isolation from the network with isolation from ordinary hazards.
 
 At nine oh one, the main fiber was disconnected by design.
 
