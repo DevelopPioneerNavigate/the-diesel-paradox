@@ -173,7 +173,10 @@ def main():
             label=heading.group(1).strip()
         else:
             label=section
-        matches=[i for i,text in enumerate(page_text) if label in text]
+        # Reflow can wrap the visual chapter title across lines. Bookmarks compare
+        # normalized whitespace, not the hard line breaks created by PDF layout.
+        matches=[i for i,text in enumerate(page_text)
+                 if " ".join(label.split()) in " ".join(text.split())]
         if not matches:
             # Reference-only sections have a separate section label above the source's own heading.
             matches=[i for i,text in enumerate(page_text) if section in text]
