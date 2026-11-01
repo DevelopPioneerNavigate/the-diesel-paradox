@@ -23,6 +23,16 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-35.md":
+        check(3500<=len(story.split())<=5000,"Chapter 35 must be 3500-5000 full-prose words")
+        check("THIRD OPTION: QUALIFIED WORK PATH. NOT YET AUTHORIZED FOR PG-1." in story,
+              "Chapter 35 must preserve bench-only scope and no live PG-1 authorization")
+        check("NO LIVE PG-1 OPERATION UNTIL EACH INDEPENDENT HOLD POINT IS CLOSED." in story,
+              "Chapter 35 must preserve independent readiness hold points")
+        check("NO TERM LABELED" in story and "D-star" in story,
+              "Chapter 35 must account for energy without claiming D-star conversion")
+        check("I love you" in story and "ASTRA INDEPENDENT CONSENT AND SAFETY REVIEW" in story,
+              "Chapter 35 must preserve ASTRA autonomous mutual love and consent")
     if p.name=="chapter-34.md":
         check(3500<=len(story.split())<=5000,"Chapter 34 must be 3500-5000 full-prose words")
         check("PRESERVE EXTERNAL REFERENCE. LOCAL LOSS ACCEPTABLE." in story and "THE FOURTH BOUNDARY IS MEASURED. ITS PURPOSE IS NOT." in story,
