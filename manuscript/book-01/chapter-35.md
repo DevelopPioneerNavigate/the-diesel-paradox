@@ -62,7 +62,7 @@ The third board was empty.
 
 Dr. Miriam Hale set a folder on the table. “Before anyone invents anything, the exclusion strip remains closed. No one touches the old cabinet, lifts a cover, or cuts a service line. I want that in the minutes.”
 
-Elena Morales read from the current lockout register. “PG-1 de-energized. Sector Six physically isolated. No field test. No flood gate operation. No authorization to use the experimental coolant skid. The unfinished utility inspection is still unfinished.”
+Elena Mora read from the current lockout register. “PG-1 de-energized. Sector Six physically isolated. No field test. No flood gate operation. No authorization to use the experimental coolant skid. The unfinished utility inspection is still unfinished.”
 
 “It's comforting,” Aaron said, “to hear the same terrible news delivered with such consistency.”
 
