@@ -60,7 +60,7 @@ Aaron looked at her. “That one stays.”
 
 They spent the afternoon trying to avoid the obvious solution.
 
-The first proposal was to move the thermal receiver outside. It would be wonderfully convenient to install a larger exchanger in the service yard and run insulated lines to the work path. Elena Morales rejected the route before the team had finished drawing it. The proposed pipe supports crossed an unverified foundation strip. A thermal expansion anchor would have placed a new lateral force on the western plinth—the unidentified old restraint whose controller had already demonstrated an unpleasant preference for preserving its own reference.
+The first proposal was to move the thermal receiver outside. It would be wonderfully convenient to install a larger exchanger in the service yard and run insulated lines to the work path. Elena Mora rejected the route before the team had finished drawing it. The proposed pipe supports crossed an unverified foundation strip. A thermal expansion anchor would have placed a new lateral force on the western plinth—the unidentified old restraint whose controller had already demonstrated an unpleasant preference for preserving its own reference.
 
 “No borrowed stiffness,” Elena said. “Not even when it's dressed up as pipework.”
 
