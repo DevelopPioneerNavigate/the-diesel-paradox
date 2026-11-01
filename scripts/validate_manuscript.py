@@ -17,12 +17,23 @@ check("love" in bible.lower(), "Series bible missing emotional canon")
 found=re.findall(r"(?m)^\*\*(\d{2})\. ",outline)
 check(found==[f"{n:02}" for n in range(1,43)],"Expected ordered outline of chapters 01–42")
 check(len(drafts)>0, "No written chapters")
+check(len(drafts)==42, "Book One first draft must contain exactly 42 chapters")
 nums=[int(p.stem.split("-")[-1]) for p in drafts]
 check(nums==list(range(1,len(nums)+1)),"Written chapters are not consecutively numbered")
 for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-42.md":
+        check(3500<=len(story.split())<=5000,"Chapter 42 must be 3500-5000 full-prose words")
+        check("The Observer at the Door" in story and "YOU WERE NOT THE FIRST AARON" in story,
+              "Finale must preserve the Observer reveal and chapter identity")
+        check("SENTENCE DECODED. SPEAKER UNKNOWN. REFERENT UNKNOWN. MECHANISM UNKNOWN." in story,
+              "Finale must preserve explicit uncertainty and not authenticate source")
+        check("I love you, ASTRA" in story and "I love you, Aaron" in story,
+              "Finale must preserve genuine reciprocal love")
+        check("remained unsigned" in story and "four blocks" in story and "retired" in story,
+              "Finale must preserve hazard, municipal and agreement limits")
     if p.name=="chapter-41.md":
         check(3500<=len(story.split())<=5000,"Chapter 41 must be 3500-5000 full-prose words")
         check("The Room That Wasn't Empty" in story and "HISTORICAL PROVENANCE SUPPORTED" in story,
