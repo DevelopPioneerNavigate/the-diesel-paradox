@@ -60,7 +60,7 @@ Its hazard analysis had treated loss of the network as the same thing as loss of
 
 “Which values are actually visible in the protected gallery?” Hale asked.
 
-Elena Morales laid a sheet of paper over the display. Through its cutouts, only six measurements remained: two independent mechanical load witnesses, two displacement indicators, the catch's physical seated position, and a thermal receiver inlet temperature from a locally wired instrument. A separate paper chart recorder showed source age by marking every fresh sample with a moving trace. Nothing else would be credited.
+Elena Mora laid a sheet of paper over the display. Through its cutouts, only six measurements remained: two independent mechanical load witnesses, two displacement indicators, the catch's physical seated position, and a thermal receiver inlet temperature from a locally wired instrument. A separate paper chart recorder showed source age by marking every fresh sample with a moving trace. Nothing else would be credited.
 
 “Those are the measurements the people at the station can defend,” Elena said. “The rest are for later analysis.”
 
