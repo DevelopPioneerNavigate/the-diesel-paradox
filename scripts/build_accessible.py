@@ -114,9 +114,8 @@ def build(epub: Path, txt: Path):
         if sum(1 for k, _ in blocks if k == "paragraph") < 30:
             raise ValueError(f"{path.name}: suspiciously few prose paragraphs")
         chapters.append((index, title, blocks))
-    ebook_text = [TITLE, "DPN Technology · Complete 42-chapter first draft", "",
-                  "For best text-to-speech playback, use the reflowable EPUB edition. "
-                  "This plain-text edition contains no page headers, footers or layout line breaks.", ""]
+    # Speech content begins with the novel, not manufacturing notes or instructions.
+    ebook_text = [TITLE, "", ""]
     for n, title, blocks in chapters:
         ebook_text.extend([title, ""])
         for kind, item in blocks:
