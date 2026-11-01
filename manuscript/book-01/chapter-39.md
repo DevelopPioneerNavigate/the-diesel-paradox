@@ -130,7 +130,7 @@ Helena Price appeared on the independent municipal link. She was in a portable m
 
 “I have the same three impulses,” she said. “My west witness does not show the expected arrival delay. My north witness has a much smaller response. No settlement excursion. No pressure transient at the water main.”
 
-“Could it be the plinth?” Elena Morales asked.
+“Could it be the plinth?” Elena Mora asked.
 
 “Not from this evidence,” Price replied. “I have not inferred a source.”
 
