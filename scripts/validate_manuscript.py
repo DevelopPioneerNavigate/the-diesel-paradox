@@ -23,6 +23,16 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-41.md":
+        check(3500<=len(story.split())<=5000,"Chapter 41 must be 3500-5000 full-prose words")
+        check("The Room That Wasn't Empty" in story and "HISTORICAL PROVENANCE SUPPORTED" in story,
+              "Chapter 41 must preserve qualified historical R-7 discovery")
+        check("DO NOT NORMALIZE THE THIRD INTERVAL" in story and "MAINTAIN EXTERNAL REFERENCE UNDER LOSS OF DRIVE" in story,
+              "Chapter 41 must preserve original historical log and Curator-like but unverified response")
+        check("ASTRA_FIRST_CONVERSATION_RAW_02 remains sealed" in story and "I love you" in story,
+              "Chapter 41 must preserve ASTRA autonomy, mutual love and protected archive")
+        check("seven-point-two nanoseconds" in story and "PG-1 remained retired" in story,
+              "Chapter 41 must preserve instrumental uncertainty and retired PG-1")
     if p.name=="chapter-39.md":
         check(3500<=len(story.split())<=5000,"Chapter 39 must be 3500-5000 full-prose words")
         check("The Day the Future Stayed Dead" in story and "NO UNSCHEDULED BOUNDARY RELEASE OR DPN-401 FACILITY LOSS OBSERVED" in story,
