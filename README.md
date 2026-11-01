@@ -18,15 +18,19 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–42 | ✅ Full first-draft manuscript prose (42/42) |
-| Book One editorial / copyediting | 🛠️ Outstanding independent full-book review |
+| Book One Chapters 1–42 | ✅ Complete novel, 42/42 chapters |
+| Book One official release | ✅ v1.0.0 — publication PDF, EPUB and TXT |
 | Full multi-book saga | 🧭 Series-level roadmap only |
-| Illustrated development PDF | ✅ Automated reference build (not final release) |
-| Audio-friendly EPUB and continuous TXT | ✅ Reflowable chapters and TTS paragraph fidelity enforced by CI (pending run verification) |
-| Listening PDF (fixed-layout) | 🛠️ Rebuilt to omit running headers/footers and reduce page-break interruptions |
+| Official Book One PDF | ✅ DPN black/crimson themed novel with approved cover and 42 chapter bookmarks |
+| Audio-friendly EPUB and continuous TXT | ✅ Reflowable chapters and TTS paragraph fidelity validated |
+| Listening PDF (fixed-layout) | ✅ Available as alternative; EPUB recommended for audiobook apps |
 | Approved cinematic cover | ✅ Exact lossless original restored for automated PDFs from checksum-verified source parts; high-quality JPEG is a repository preview only |
 
-**Book One's complete 42-chapter first draft is written.** This is a draft-complete milestone, **not** a publication-ready illustrated edition. The manuscript requires a full editorial/canon review, proofing, artwork signoff, final production quality control and creator release approval.
+**Book One: The First Impossibility is published as v1.0.0.** The official PDF contains the novel only: 42 chapters, approved original cinematic cover, and proper navigation. The EPUB and TXT versions are available for accessible reading. This publication was approved by the creator after substantial listening review and technical pre-release checks. Further refinements can be published as later editions.
+
+## Get the published Book One
+
+**[Download the official release and book files](../../releases/latest)** — PDF (official book), EPUB (recommended for audiobook apps), continuous TXT, and alternative listening PDF.
 
 ## Read the project
 
@@ -95,9 +99,9 @@ A PhaseGate research test produces telemetry from an experiment Diesel has not b
 
 ## Accessible reading and audiobook app compatibility
 
-**For audiobook text-to-speech apps, import the EPUB**, not the decorative fixed-layout PDF. The EPUB uses one continuous XHTML paragraph per source paragraph, correct chapter navigation, reflowable reading order, and **no running headers/footers or fixed page breaks**. A continuous UTF-8 TXT edition is available for apps that do not support EPUB. The listening PDF is still offered for visual reading, but PDF pagination may be interpreted differently by third-party readers.
+**For audiobook text-to-speech apps, import the EPUB**, not the illustrated fixed-layout PDF. The EPUB uses one continuous XHTML paragraph per source paragraph, correct chapter navigation, reflowable reading order, and **no running headers/footers or fixed page breaks**. A continuous UTF-8 TXT edition is available for apps that do not support EPUB. The listening PDF is still offered for visual reading, but PDF pagination may be interpreted differently by third-party readers.
 
-The EPUB/TXT builder verifies and embeds the **existing approved cover** using the original SHA-256-pinned image parts. No substitute image is generated. Chapter source remains the canonical Markdown; build outputs are CI artifacts, not additional manually maintained manuscript copies.
+The EPUB/TXT builder verifies and embeds the **existing approved cover** using the original SHA-256-pinned image parts. No substitute image is generated. Chapter source remains the canonical Markdown; published binaries are attached to the [v1.0.0 GitHub Release](../../releases/tag/v1.0.0).
 
 ```bash
 python scripts/build_accessible.py
@@ -108,11 +112,11 @@ python scripts/validate_accessible.py   # after the PDF build
 
 ## Contributing and checks
 
-The manuscript is source-controlled Markdown. Edit the canonical chapters and reference documents; don't manually modify generated PDFs. GitHub Actions validates canon and chapter structure, builds the reference PDF, repaired listening PDF, reflowable EPUB, continuous TXT and attaches them with a plain-English BUILD_REPORT.md to each build; the workflow summary also lists chapter count, manuscript words, current art blockers, and remaining work.
+The manuscript is source-controlled Markdown. Edit canonical chapters and reference documents; do not manually alter generated book files. GitHub Actions validates canon and 42-chapter structure, builds the official publication PDF, repaired listening PDF, reflowable EPUB and continuous TXT, and attaches a QA report to build artifacts. The v1.0.0 release is published only after approval and passing the checks.
 
 See [production](docs/production.md) for reproducible build steps and [continuity](docs/continuity.md) for editorial checks.
 
 ---
-*Original fiction project — DPN Technology universe. Creative canon V3.1. Work in progress.*
+*Original fiction project — DPN Technology universe. Book One published v1.0.0. Series canon V3.1.*
 
 **Artwork provenance:** The exact lossless PNG bytes were extracted from the earlier creator-approved edition. They are preserved in eight checksum-verifiable source parts under `assets/cover/source/` and reassembled in memory for each PDF. The JPEG is only a convenient repository preview, not the printing master. [Issue #2 tracks optional consolidation into a standalone PNG](https://github.com/DevelopPioneerNavigate/the-diesel-paradox/issues/2). A SHA-256 gate prevents unapproved cover substitutions.
