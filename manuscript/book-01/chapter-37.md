@@ -434,9 +434,11 @@ Aaron had never been so grateful for boring.
 
 The guide's displacement trace held flat. Both independent load witnesses stayed within their static bands. The catch telltale remained seated. The unknown western plinth's passive witness had shown no threshold excursion on the locally isolated channel.
 
-The crew had time to finish the mandatory observation hold before the communications window ended. They did not use that time to attempt a prettier alignment.
+The crew used the next two minutes and twenty-two seconds for the mandatory observation hold before the communications window ended. They did not use that time to attempt a prettier alignment.
 
-“Seven hundred seconds of permit time used,” Elena said.
+At 10:25:40, Elena checked the independent clock.
+
+“Seven hundred seconds of permit time used,” she said.
 
 “Don't round the clock into a success criterion,” Hale replied.
 
