@@ -46,6 +46,7 @@ manuscript/book-01/
   chapter-33.md           # The Price of Stability
   chapter-34.md           # The Fourth Boundary
   chapter-35.md           # Third Option
+  chapter-36.md           # The Argument's Last Test
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
@@ -69,6 +70,8 @@ python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development.pdf --o
 ```
 
 A GitHub Actions workflow validates the canon and produces **the reference development PDF**, a **chapters-only listening PDF** with selectable text, and **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
+
+**Current manuscript:** 36 of 42 chapters drafted; Chapter 36 permanently retires PG-1 generation one after a qualified limited diagnostic. Six chapters remain. No new operating authorization is implied by a passing build.
 
 **Do not mistake successful PDF generation for manuscript completeness.** Unwritten chapters remain unwritten.
 
