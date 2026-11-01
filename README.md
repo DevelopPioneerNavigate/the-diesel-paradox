@@ -16,8 +16,8 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 |---|---|
 | Series bible | ✅ Foundation draft, Canon V3.1 |
 | Book One 42-chapter outline | ✅ Planned |
-| Book One Chapters 1–36 | ✅ Full manuscript prose |
-| Book One Chapters 37–42 | ✍️ Not yet written |
+| Book One Chapters 1–37 | ✅ Full manuscript prose |
+| Book One Chapters 38–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
 | Approved cinematic cover | 🎨 Approved art direction; production asset import in progress |
@@ -64,6 +64,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 - [Chapter Thirty-Four: The Fourth Boundary](manuscript/book-01/chapter-34.md)
 - [Chapter Thirty-Five: Third Option](manuscript/book-01/chapter-35.md)
 - [Chapter Thirty-Six: The Argument's Last Test](manuscript/book-01/chapter-36.md)
+- [Chapter Thirty-Seven: ASTRA, Stay with Me](manuscript/book-01/chapter-37.md)
 - [Book production and artwork](docs/production.md)
 - [Continuity checklist](docs/continuity.md)
 
