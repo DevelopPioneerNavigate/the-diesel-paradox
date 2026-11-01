@@ -337,7 +337,7 @@ This time Kessler did not argue.
 
 ***
 
-The qualified rigger was Elena Morales, DPN's maintenance lead. She arrived with a harness, a load chart, and an expression suggesting she had been interrupted halfway through a much better morning.
+The qualified rigger was Elena Mora, DPN's maintenance lead. She arrived with a harness, a load chart, and an expression suggesting she had been interrupted halfway through a much better morning.
 
 "What's the mass?" she asked.
 
