@@ -80,11 +80,11 @@ python scripts/validate_accessible.py
 python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development.pdf --out dist/BUILD_REPORT.md
 ```
 
-A GitHub Actions workflow validates the canon and produces **the reference development PDF**, a **reflowable audiobook-friendly EPUB**, **continuous TXT**, improved chapters-only listening PDF, and **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
+A GitHub Actions workflow validates the canon and produces **the official novel PDF**, a **reflowable audiobook-friendly EPUB**, **continuous TXT**, improved chapters-only listening PDF, and **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. An author-approved merge with the release marker publishes versioned PDF/EPUB/TXT assets to GitHub Releases; ordinary pushes cannot republish v1.0.0.
 
-**Current manuscript:** Book One's 42 of 42 chapters have first-draft prose. Chapter 42 re-examines the anchored optical packet with the 1984 R-7 Observer Reference clue, finds an uncertain second message in a private notation shared by Aaron and ASTRA, and preserves explicit alternative decodings and source ambiguity. **Draft complete, not publication-ready.** Full editorial/canon verification, proofreading, interior illustration approval, final pagination and creator release approval remain open. PG-1 stays retired, Axiom dismantled, Bellwether's four-block evacuation in force, and the Directorate's wider safety framework unsigned.
+**Current manuscript:** Book One has all 42 chapters and is approved for official v1.0.0 publication. Chapter 42 re-examines the anchored optical packet with the 1984 R-7 Observer Reference clue, finds an uncertain second message in a private notation shared by Aaron and ASTRA, and preserves explicit alternative decodings and source ambiguity. **Creator-approved v1.0.0 public edition.** Full editorial/canon verification, proofreading, interior illustration approval, final pagination and creator release approval remain open. PG-1 stays retired, Axiom dismantled, Bellwether's four-block evacuation in force, and the Directorate's wider safety framework unsigned.
 
-**Do not mistake draft completeness for publication readiness.** Passing generated PDFs are proof of a build, not a final editorial certification. See [the draft audit](book-one-draft-audit.md).
+**Publication decision:** The author has approved the official release after extensive listening checks; CI also verifies full chapter and cover integrity. Further literary revisions, independent line edits and interior art can be added in later versions. See [the draft audit](book-one-draft-audit.md) for historical technical and editorial notes.
 
 ## Approved visual direction
 
@@ -111,9 +111,9 @@ A high-quality JPEG at `assets/cover/approved-cover.jpg` exists for GitHub previ
 2. Update canon / timeline when discoveries change.
 3. Generate and validate the development PDF.
 4. Add approved cover and interior illustrations.
-5. Build **one authoritative illustrated edition** of each book.
+5. Build **one authoritative official PDF edition** of each book, preserving the approved cover.
 6. Validate page rendering, overflow, artifacts and chapter index.
-7. Approve a release only after manuscript and art are complete.
+7. Publish the versioned release with the creator-approved artwork and verified complete manuscript.
 
 
 ## Text-to-speech and accessibility compatibility
@@ -125,3 +125,10 @@ The original 1,032-page fixed-layout listening PDF repeated headers/footers on 1
 The PDF listening build removes repeated running text and duplicate chapter production headers, keeps typical paragraphs together where layout allows, and identifies the book accurately as a complete first draft rather than an unfinished manuscript. Do not claim this can force a particular third-party audiobook app to handle PDF reading correctly. CI compares every EPUB source paragraph against the original Markdown and rejects missing/altered content, bad book navigation, unverified cover, repeated PDF headers or missing finale.
 
 Avoid hand-modifying any generated file. Run the source validators, then regenerate all editions in CI. Do not change or merge the original cover.
+
+
+## Official v1.0.0 publication
+
+Run `python scripts/build_book.py --out dist/The_Diesel_Paradox_Book_One.pdf` for the novel-only publication PDF. This book excludes research bibles and chapter plans and contains no development-status notices. Verify `python scripts/validate_publication.py` after building the PDF. The `--listening` option remains for a PDF with no running text; reflowable EPUB is preferred for TTS.
+
+Version **v1.0.0** is created by GitHub Actions after the owner-approved merge, gated by full manuscript, PDF, accessible EPUB/TXT and cover integrity checks. The release artifact is `The_Diesel_Paradox_Book_One.pdf`; EPUB/TXT and optional listening PDF are attached alongside it. The exact creator-approved cinematic cover remains immutable.
