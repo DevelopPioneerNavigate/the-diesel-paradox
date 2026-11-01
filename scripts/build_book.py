@@ -34,7 +34,7 @@ def theme_page(canvas,doc):
     canvas.setFont("Helvetica",7)
     canvas.setFillColor(colors.HexColor("#a5adbc"))
     canvas.drawString(50,h-43,"DPN TECHNOLOGY  /  THE DIESEL PARADOX")
-    canvas.drawString(50,33,("LISTENING EDITION" if getattr(doc,"listening",False) else "DEVELOPMENT EDITION")+"  /  CANON V3.1")
+    canvas.drawString(50,33,"BOOK ONE  /  THE FIRST IMPOSSIBILITY")
     canvas.drawRightString(w-50,33,str(doc.page+1))
     canvas.restoreState()
 
@@ -126,37 +126,36 @@ def make_cover():
 
 def main():
     cli=argparse.ArgumentParser()
-    cli.add_argument("--out",default="dist/The_Diesel_Paradox_Development_Edition.pdf")
+    cli.add_argument("--out",default="dist/The_Diesel_Paradox_Book_One.pdf")
     cli.add_argument("--listening",action="store_true",help="Build only written novel chapters for read-aloud PDF apps")
     args=cli.parse_args()
     dest=Path(args.out)
     if not dest.is_absolute():dest=ROOT/dest
     dest.parent.mkdir(parents=True,exist_ok=True)
     st=styles()
-    sections=[] if args.listening else [
-      ("SERIES BIBLE",ROOT/"docs/series-bible.md"),
-      ("BOOK ONE: 42-CHAPTER PLAN",ROOT/"docs/book-one-outline.md"),
-    ]
+    # The public release and audio PDF both contain ONLY the novel chapters.
+    # Research documents and series notes are private working sources, not book pages.
+    sections=[]
     for p in sorted((ROOT/"manuscript/book-01").glob("chapter-*.md")):
         sections.append((p.stem.upper().replace("-"," "),p))
     story=[
       Paragraph("THE DIESEL PARADOX",st["h1"]),
       Paragraph("Book One: The First Impossibility",st["h2"]),
-      Paragraph("Canon V3.1 | DPN Technology | "+("Listening Edition" if args.listening else "Development Edition"),st["p"]),
-      Paragraph(("Complete Book One first draft: all 42 written chapters. Editorial and publishing approval remain pending. For reliable text-to-speech, use the reflowable EPUB rather than fixed-layout PDF." if args.listening else "Book One is draft-complete, not publication-ready. This reference edition includes the series bible, 42-chapter outline and manuscript."),st["p"]),
+      Paragraph("An original science fiction novel by DPN Technology",st["p"]),
+      Paragraph("Copyright © 2026 DPN Technology. All rights reserved.",st["p"]),
     ]
     for title,path in sections:
-        if args.listening and path.name.startswith("chapter-"):
+        if path.name.startswith("chapter-"):
             # The source already contains its canonical chapter title. Do not read it
             # twice by adding an internal "CHAPTER 01" production heading.
             story.append(PageBreak())
         else:
             story.extend([PageBreak(), Paragraph(title, st["h2"])])
-        story.extend(parse(path.read_text(encoding="utf-8"),st,listening=args.listening))
+        story.extend(parse(path.read_text(encoding="utf-8"),st,listening=True))
     body=BytesIO()
-    edition = "Listening Edition" if args.listening else "Development Edition"
+    edition = "Book One: The First Impossibility"
     doc=SimpleDocTemplate(body,pagesize=SIZE,leftMargin=50,rightMargin=50,topMargin=67,bottomMargin=65,
-                          title="The Diesel Paradox: "+edition,author="DPN Technology")
+                          title="The Diesel Paradox — "+edition,author="DPN Technology")
     doc.listening=args.listening
     doc.build(story,onFirstPage=theme_page,onLaterPages=theme_page)
     pdf=PdfWriter()
@@ -183,7 +182,7 @@ def main():
         if not matches:
             raise ValueError(f"Unable to bookmark {source.name}: {label}")
         pdf.add_outline_item(label,matches[0])
-    pdf.add_metadata({"/Title":"The Diesel Paradox: "+edition,"/Author":"DPN Technology"})
+    pdf.add_metadata({"/Title":"The Diesel Paradox — "+edition,"/Author":"DPN Technology","/Subject":"Original science fiction novel; Book One"})
     with dest.open("wb") as handle:pdf.write(handle)
     print("Wrote",dest, "pages",len(pdf.pages))
 
