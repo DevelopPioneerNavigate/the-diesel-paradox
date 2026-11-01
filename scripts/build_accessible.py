@@ -81,13 +81,13 @@ def title_of(source: str) -> str:
 def strip_md(s: str) -> str:
     """Strip paired Markdown emphasis only, preserving literal D-star notation."""
     s = re.sub(r"\*\*(.+?)\*\*", r"\1", s)
-    s = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"\1", s)
+    s = re.sub(r"(?<![\w*])\*([^*\n]+)\*(?![\w*])", r"\1", s)
     return s.replace("`", "").replace("\\_", "_")
 
 def rich(s: str) -> str:
     s = html.escape(s, quote=False)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
-    s = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", s)
+    s = re.sub(r"(?<![\w*])\*([^*\n]+)\*(?![\w*])", r"<em>\1</em>", s)
     return s.replace("`", "")
 
 def document(inner: str, title: str) -> str:
