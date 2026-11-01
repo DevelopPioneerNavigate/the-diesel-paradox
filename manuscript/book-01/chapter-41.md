@@ -2,7 +2,7 @@
 ## BOOK ONE: THE FIRST IMPOSSIBILITY
 ## Chapter Forty-One — The Room That Wasn't Empty
 
-The room had been empty for forty-two years.
+The room had not existed for thirty-eight years.
 
 That was what the property records said.
 
