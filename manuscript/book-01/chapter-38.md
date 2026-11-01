@@ -74,7 +74,7 @@ The third was to use the old thirteen-minute thermal buffer.
 
 “It has thirteen minutes of qualified isolation duty,” Hale said. “Not thirteen minutes of arbitrary energy absorption. A stopwatch is not a heat exchanger.”
 
-The fourth proposal was a direct diversion into the lower vaults. The flood-containment concept had existed since the consequence model in Chapter Thirty-Three of the team's own internal chronology, though nobody in the room referred to their lives as chapters. Two dry service vaults could, in theory, be sacrificed to protect people from a credible conditioning-fluid release.
+The fourth proposal was a direct diversion into the lower vaults. The flood-containment concept had existed since the team's earlier consequence modeling, when they first acknowledged that protecting people might mean losing entire laboratories. Two dry service vaults could, in theory, be sacrificed to protect people from a credible conditioning-fluid release.
 
 The floor plan looked generous. The engineering evidence did not.
 
