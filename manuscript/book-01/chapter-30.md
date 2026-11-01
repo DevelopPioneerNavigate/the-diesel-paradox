@@ -71,7 +71,7 @@ At 07:05, independent engineer Dr. Miriam Hale signed a temporary hazard map div
 
 Aaron hated the word available. It sounded like an invitation. Hale replaced it with authorized under the specific permit, and he admitted that was better.
 
-Elena Morales, the rigger who had freed Luis Ortega yesterday, inspected the mechanical egress route with the fire officer. She checked the door's actual opening force, the latch's independent power, the floor markings, and the path from the limited corridor to open air. She did not accept a photograph of the route as proof that a wheeled stretcher could turn the corner.
+Elena Mora, the rigger who had freed Luis Ortega yesterday, inspected the mechanical egress route with the fire officer. She checked the door's actual opening force, the latch's independent power, the floor markings, and the path from the limited corridor to open air. She did not accept a photograph of the route as proof that a wheeled stretcher could turn the corner.
 
 Two technicians carried a mock stretcher through it while an observer timed them. The first attempt failed when a temporary instrument cart reduced the turning radius. Elena had the cart removed, tagged the space against storage, and made them repeat the route.
 
