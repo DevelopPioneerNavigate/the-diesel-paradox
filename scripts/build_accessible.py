@@ -82,7 +82,7 @@ def strip_md(s: str) -> str:
     """Strip paired Markdown emphasis only, preserving literal D-star notation."""
     s = re.sub(r"\*\*(.+?)\*\*", r"\1", s)
     s = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"\1", s)
-    return s.replace("\`", "").replace("\\_", "_")
+    return s.replace("`", "").replace("\\_", "_")
 
 def rich(s: str) -> str:
     s = html.escape(s, quote=False)
