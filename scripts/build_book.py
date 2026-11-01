@@ -93,20 +93,21 @@ def make_cover():
     c=Canvas(data,pagesize=SIZE)
     w,h=SIZE
     c.setFillColor(BG);c.rect(0,0,w,h,fill=1,stroke=0)
-    # The original approved image was recovered from the creator's early edition.
-    # Prefer its lossless source; retain the approved, visually faithful JPEG
-    # derivative as a repository-backed fallback. Neither may be substituted.
-    allowed=(
-        (ROOT/"assets/cover/approved-cover.png", "5ba1bd629ff9b7b86bbcc4e1a2f956f4965078989fe46e66d508d6f6cf976e06"),
-        (ROOT/"assets/cover/approved-cover.jpg", "76ee9e7e6db1e39eb4a26ad2b47de3d26de7688788ccf789e6cff5cc34341567"),
-    )
-    found=[(path,digest) for path,digest in allowed if path.is_file()]
-    if not found:
-        raise FileNotFoundError("Creator-approved cover is missing. Do not publish a placeholder; restore assets/cover/approved-cover.jpg or the verified PNG source.")
-    image, expected_sha256=found[0]
-    if hashlib.sha256(image.read_bytes()).hexdigest()!=expected_sha256:
-        raise ValueError("Approved cover artwork changed unexpectedly; publishing stopped until the creator approves a new image.")
-    img=ImageReader(str(image));iw,ih=img.getSize()
+    # Use ONLY the exact lossless cover recovered from the creator-approved PDF.
+    # Its source bytes are stored as eight immutable Git blobs to fit the
+    # repository connector's per-request upload limit. No replacement art.
+    expected_sha256="5ba1bd629ff9b7b86bbcc4e1a2f956f4965078989fe46e66d508d6f6cf976e06"
+    original=ROOT/"assets/cover/approved-cover.png"
+    if original.is_file():
+        cover_data=original.read_bytes()
+    else:
+        parts=[ROOT/"assets/cover/source"/f"approved-cover.png.part-{part:02d}.bin" for part in range(1,9)]
+        if not all(p.is_file() for p in parts):
+            raise FileNotFoundError("Original approved cover source is incomplete. Do not publish a placeholder or a JPEG substitution.")
+        cover_data=b"".join(p.read_bytes() for p in parts)
+    if hashlib.sha256(cover_data).hexdigest()!=expected_sha256:
+        raise ValueError("Original approved cover checksum mismatch. Publishing stopped: unapproved artwork must not be substituted.")
+    img=ImageReader(BytesIO(cover_data));iw,ih=img.getSize()
     scale=max(w/iw,h/ih);dw,dh=iw*scale,ih*scale
     c.drawImage(img,(w-dw)/2,(h-dh)/2,width=dw,height=dh,mask="auto")
     c.showPage();c.save()

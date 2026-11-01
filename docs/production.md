@@ -52,7 +52,8 @@ manuscript/book-01/
   chapter-39.md           # The Day the Future Stayed Dead
 assets/
   brand/phasegate-blueprint.svg
-  cover/approved-cover.jpg # Approved composition recovered from early edition; SHA-256 pinned
+  cover/approved-cover.jpg  # Preview only: approved artwork
+  cover/source/           # Eight binary shards of the exact original approved PNG; SHA-256 pinned
 scripts/
   validate_manuscript.py
   build_book.py
@@ -82,9 +83,11 @@ A GitHub Actions workflow validates the canon and produces **the reference devel
 
 The creator approved an image showing Diesel at his futuristic laboratory controls, with ASTRA as a holographic technological presence, and an immense PhaseGate / spacetime anomaly. The composition reads as high-stakes technological science fiction, not a romance book cover.
 
-**Cover restoration:** The original cinematic composition was recovered from the creator-approved chapters 1–25 edition and is now committed at `assets/cover/approved-cover.jpg` as a visually faithful, high-quality JPEG derivative (1024 × 1536). This is the same approved illustration, not a generated or redesigned cover. The exact lossless extracted PNG is available separately to the creator and may be imported later at `assets/cover/approved-cover.png` (tracked by Issue #2).
+**Original approved cover restored without redesign:** The exact 1024 × 1536 lossless PNG artwork was extracted from the creator-approved chapters 1–25 edition. Because the GitHub connector limits the size of an individual upload, the 3,443,010 original PNG bytes are stored, in order, in **eight binary parts** at `assets/cover/source/approved-cover.png.part-01.bin` through `part-08.bin`. The PDF builder combines those bytes in memory, verifies SHA-256 `5ba1bd629ff9b7b86bbcc4e1a2f956f4965078989fe46e66d508d6f6cf976e06`, and renders that exact approved artwork. This is **not** a regenerated cover.
 
-The PDF builder prefers the **verified PNG** when present and otherwise uses the committed **verified JPEG**. Both accepted image files are SHA-256 locked in `scripts/build_book.py`. **Missing or altered artwork must fail the build; never silently publish a placeholder or substitute a new cover.** The publishing job also checks both PDFs contain a cover image.
+A high-quality JPEG at `assets/cover/approved-cover.jpg` exists for GitHub preview **only**, and is never used to generate the book's cover. If the creator later imports the standalone lossless PNG at `assets/cover/approved-cover.png`, the builder uses it after the same checksum verification (Issue #2 tracks this optional consolidation).
+
+**Missing, incomplete or altered approved artwork must fail the build; never silently publish a placeholder or substitute a new cover.** The publishing job additionally checks both PDFs contain an embedded image on their cover pages.
 
 ### Artwork conventions
 

@@ -18,7 +18,8 @@ count=len(chapters)
 words=sum(counts.values())
 pdf=ROOT/args.pdf
 listening=ROOT/"dist/The_Diesel_Paradox_Listening_Edition.pdf"
-approved_assets=[ROOT/"assets/cover/approved-cover.png", ROOT/"assets/cover/approved-cover.jpg"]
+approved_assets=[ROOT/"assets/cover/approved-cover.png"]
+lossless_parts=[ROOT/"assets/cover/source"/f"approved-cover.png.part-{i:02d}.bin" for i in range(1,9)]
 report=[
 "# The Diesel Paradox — Build Report",
 "",
@@ -47,10 +48,10 @@ report += [
 "- The story is written as scientific adventure with ASTRA as an independent character.",
 "",
 "## Art and remaining tasks",
-("Approved cinematic cover: PRESENT in repository; publishing enforces approved artwork checksums." if any(path.exists() for path in approved_assets) else
+("Approved cinematic cover: exact lossless source PRESENT (verified in publishing pipeline)." if any(path.exists() for path in approved_assets) or all(p.exists() for p in lossless_parts) else
  "Approved cinematic cover: MISSING; publishing must fail until restored."),
 f"- Chapters remaining to write: **{42-count}**.",
-"- Optional import of original lossless approved PNG (Issue #2) and scene-accurate interior illustrations.",
+"- Optional consolidation of the exact original PNG into a single repository file (Issue #2); scene-accurate interior illustrations.",
 "- Editorial quality review and typesetting after all chapters are finished.",
 "",
 "## What the passing build means",

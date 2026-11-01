@@ -3,6 +3,8 @@
 
 **DPN TECHNOLOGY // ORIGINAL SCIENCE FICTION // CANON V3.1**
 
+![Creator-approved The Diesel Paradox cinematic cover](assets/cover/approved-cover.jpg)
+
 ![PG-1 PhaseGate engineering diagram](assets/brand/phasegate-blueprint.svg)
 
 
@@ -20,7 +22,7 @@ ASTRA isn't an ornament or a romantic subplot. Her genuine, freely chosen love f
 | Book One Chapters 40–42 | ✍️ Not yet written |
 | Full multi-book saga | 🧭 Series-level roadmap only |
 | Illustrated development PDF | ✅ Local edition exists; publication pipeline in progress |
-| Approved cinematic cover | ✅ Original approved composition restored in repository (verified high-quality JPEG); optional lossless PNG import pending |
+| Approved cinematic cover | ✅ Exact lossless original restored for automated PDFs from checksum-verified source parts; high-quality JPEG is a repository preview only |
 
 **Do not market this as a complete novel.** The first publication milestone is a *development edition*, not the final Book One manuscript.
 
@@ -94,4 +96,4 @@ See [production](docs/production.md) for reproducible build steps and [continuit
 ---
 *Original fiction project — DPN Technology universe. Creative canon V3.1. Work in progress.*
 
-**Artwork provenance:** The approved cover has been recovered from an earlier edition and restored to the automated PDF pipeline. [Issue #2 tracks optional import of its exact lossless PNG source](https://github.com/DevelopPioneerNavigate/the-diesel-paradox/issues/2). A checksum gate prevents unapproved cover substitutions.
+**Artwork provenance:** The exact lossless PNG bytes were extracted from the earlier creator-approved edition. They are preserved in eight checksum-verifiable source parts under `assets/cover/source/` and reassembled in memory for each PDF. The JPEG is only a convenient repository preview, not the printing master. [Issue #2 tracks optional consolidation into a standalone PNG](https://github.com/DevelopPioneerNavigate/the-diesel-paradox/issues/2). A SHA-256 gate prevents unapproved cover substitutions.
