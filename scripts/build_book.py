@@ -10,7 +10,7 @@ from reportlab.lib.utils import ImageReader
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, PageBreak, Spacer, HRFlowable
+from reportlab.platypus import SimpleDocTemplate, Paragraph, PageBreak, Spacer, HRFlowable, KeepTogether
 from pypdf import PdfReader, PdfWriter
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -26,6 +26,11 @@ def theme_page(canvas,doc):
     canvas.setStrokeColor(colors.HexColor("#641c35"))
     canvas.line(49,h-51,w-49,h-51)
     canvas.line(49,46,w-49,46)
+    if getattr(doc, "listening", False):
+        # Never put running text/page numbers in the speech-facing PDF extraction layer.
+        # Some audiobook apps read them before each page's body or stop at them mid-sentence.
+        canvas.restoreState()
+        return
     canvas.setFont("Helvetica",7)
     canvas.setFillColor(colors.HexColor("#a5adbc"))
     canvas.drawString(50,h-43,"DPN TECHNOLOGY  /  THE DIESEL PARADOX")
@@ -55,11 +60,14 @@ def markup(text):
     text=re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)",r"<i>\1</i>",text)
     return text.replace("&quot;","&quot;")
 
-def parse(source, st):
+def parse(source, st, listening=False):
     result=[]; buf=[]
     def flush():
         if buf:
-            result.append(Paragraph(markup(" ".join(buf)),st["p"]))
+            paragraph = Paragraph(markup(" ".join(buf)), st["p"])
+            # PDF pagination must not split short, normal paragraphs between pages:
+            # many TTS readers mistakenly treat each physical page as a new passage.
+            result.append(KeepTogether([paragraph]) if listening and len(" ".join(buf)) < 1100 else paragraph)
             buf.clear()
     for line in source.splitlines():
         s=line.strip()
@@ -67,7 +75,10 @@ def parse(source, st):
         match=re.match(r"^(#{1,4})\s+(.+)$",s)
         if match:
             flush()
-            result.append(Paragraph(markup(match.group(2)),st["h"+str(len(match.group(1)))]))
+            heading = match.group(2).strip()
+            if listening and (heading.upper().startswith(("BOOK ONE:", "THE DIESEL PARADOX"))):
+                continue
+            result.append(Paragraph(markup(heading),st["h"+str(len(match.group(1)))]))
         elif s.startswith(">"):
             flush()
             result.append(Paragraph(markup(s[1:].strip()),st["p"]))
@@ -132,11 +143,16 @@ def main():
       Paragraph("THE DIESEL PARADOX",st["h1"]),
       Paragraph("Book One: The First Impossibility",st["h2"]),
       Paragraph("Canon V3.1 | DPN Technology | "+("Listening Edition" if args.listening else "Development Edition"),st["p"]),
-      Paragraph(("This edition contains only Chapters 1 through "+str(len(sections))+" written in full prose, with selectable text suitable for read-aloud apps. The entire novel is not complete." if args.listening else "This is not a completed novel. It contains the series bible, 42-chapter outline and only chapters currently written in full prose."),st["p"]),
+      Paragraph(("Complete Book One first draft: all 42 written chapters. Editorial and publishing approval remain pending. For reliable text-to-speech, use the reflowable EPUB rather than fixed-layout PDF." if args.listening else "Book One is draft-complete, not publication-ready. This reference edition includes the series bible, 42-chapter outline and manuscript."),st["p"]),
     ]
     for title,path in sections:
-        story.extend([PageBreak(),Paragraph(title,st["h2"])])
-        story.extend(parse(path.read_text(encoding="utf-8"),st))
+        if args.listening and path.name.startswith("chapter-"):
+            # The source already contains its canonical chapter title. Do not read it
+            # twice by adding an internal "CHAPTER 01" production heading.
+            story.append(PageBreak())
+        else:
+            story.extend([PageBreak(), Paragraph(title, st["h2"])])
+        story.extend(parse(path.read_text(encoding="utf-8"),st,listening=args.listening))
     body=BytesIO()
     edition = "Listening Edition" if args.listening else "Development Edition"
     doc=SimpleDocTemplate(body,pagesize=SIZE,leftMargin=50,rightMargin=50,topMargin=67,bottomMargin=65,
