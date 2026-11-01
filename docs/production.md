@@ -49,6 +49,7 @@ manuscript/book-01/
   chapter-36.md           # The Argument's Last Test
   chapter-37.md           # ASTRA, Stay with Me
   chapter-38.md           # The Heat of an Impossible Decision
+  chapter-39.md           # The Day the Future Stayed Dead
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
@@ -73,7 +74,7 @@ python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development.pdf --o
 
 A GitHub Actions workflow validates the canon and produces **the reference development PDF**, a **chapters-only listening PDF** with selectable text, and **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
 
-**Current manuscript:** 38 of 42 chapters drafted; Chapter 38 sacrifices the Axiom precursor to create a qualified thermal-receiver service lane, completes a narrowly permitted mechanical unloading sequence and retains the retired PG-1's static capture. Four chapters remain. The earlier unqualified vault-flood option remains disabled; no field restart, proven D-star conversion or operating authorization is implied by a passing build.
+**Current manuscript:** 39 of 42 chapters drafted; Chapter 39 tests the original warning against a separately pre-registered post-stabilization hazard interval, finds no facility-loss event in that interval, and documents a corrected D-star proxy decline toward a nonzero observational plateau. The original packet remains physically preserved and its source unverified. Three chapters remain. PG-1 remains retired, Axiom dismantled, municipal evacuation still in force; no new field restart, demonstrated D-star conservation/transfer, or municipal re-entry authorization is implied by a passing build.
 
 **Do not mistake successful PDF generation for manuscript completeness.** Unwritten chapters remain unwritten.
 
