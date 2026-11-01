@@ -23,6 +23,16 @@ for p in drafts:
     story=p.read_text(encoding="utf-8")
     check(len(story.split())>500, p.name+" is not full prose")
     check("Diesel" in story and "ASTRA" in story,p.name+" is missing a main character")
+    if p.name=="chapter-38.md":
+        check(3500<=len(story.split())<=5000,"Chapter 38 must be 3500-5000 full-prose words")
+        check("The Heat of an Impossible Decision" in story and "Axiom precursor came apart" in story,
+              "Chapter 38 must record the irreversible Axiom sacrifice")
+        check("INSTALLED RECEIVER QUALIFICATION — PASSED WITH LIMITS" in story and "PG-1 STATIC UNLOADING AUTHORIZATION — NOT YET GRANTED" in story,
+              "Chapter 38 must separate installed receiver qualification from PG-1 authorization")
+        check("RESIDUAL LOAD REDUCED — STATIC CAPTURE RETAINED. PG-1 GENERATION ONE REMAINS RETIRED." in story,
+              "Chapter 38 must retain retired PG-1 and bounded mechanical unloading")
+        check("I love you" in story and "My participation is conditional" in story,
+              "Chapter 38 must preserve ASTRA's freely chosen love and independent consent")
     if p.name=="chapter-37.md":
         check(3500<=len(story.split())<=5000,"Chapter 37 must be 3500-5000 full-prose words")
         check("RESIDUAL LOAD CAPTURED — STATIC STABILIZATION ONLY." in story and "CAPTURE WITHOUT RECENTERING" in story,
