@@ -64,7 +64,7 @@ He rotated the structural model and removed shoe twelve.
 
 The load paths turned crimson.
 
-“Now the beam twists,” Elena Morales said.
+“Now the beam twists,” Elena Mora said.
 
 “Yes,” Aaron replied. “Because the design assumed every shoe was available. That's not a safety design. That's a wish with a bill of materials.”
 
