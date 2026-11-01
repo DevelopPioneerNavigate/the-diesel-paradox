@@ -45,6 +45,7 @@ manuscript/book-01/
   chapter-32.md           # The First Laboratory Key
   chapter-33.md           # The Price of Stability
   chapter-34.md           # The Fourth Boundary
+  chapter-35.md           # Third Option
 assets/
   brand/phasegate-blueprint.svg
   cover/                  # Approved full-resolution cover goes here
