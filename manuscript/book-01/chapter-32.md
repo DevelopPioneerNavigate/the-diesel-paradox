@@ -86,7 +86,7 @@ Jian reached for a marker.
 
 ***
 
-They photographed the case from six sides. Elena Morales, temporarily assigned as a preservation witness rather than a rigger, checked the lid's fasteners against the archived images. The two screws that had been loosened during the earlier examination were still marked with blue inspection lacquer. The remaining screws had not been disturbed.
+They photographed the case from six sides. Elena Mora, temporarily assigned as a preservation witness rather than a rigger, checked the lid's fasteners against the archived images. The two screws that had been loosened during the earlier examination were still marked with blue inspection lacquer. The remaining screws had not been disturbed.
 
 Aaron did not use a screwdriver.
 
