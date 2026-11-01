@@ -33,6 +33,8 @@ jobs:
         run: python scripts/build_book.py --out dist/The_Diesel_Paradox_Development_Edition.pdf
       - name: Build listening edition containing ONLY written chapters
         run: python scripts/build_book.py --listening --out dist/The_Diesel_Paradox_Listening_Edition.pdf
+      - name: Build reflowable audiobook-friendly EPUB and continuous text
+        run: python scripts/build_accessible.py
       - name: Check that the PDF is readable
         run: |
           python - <<'PY'
@@ -104,7 +106,7 @@ jobs:
           assert "THIRD OPTION" in " ".join(audible.split()), "Chapter Thirty-Four Act V setup missing"
           assert "NO PERSONNEL EXPOSURE FOR ASSET RECOVERY" in " ".join(audible.split()), "Chapter Thirty-Three human-first constraint missing"
           assert "NO UNQUALIFIED FLOODING" in " ".join(audible.split()), "Chapter Thirty-Three design-only containment constraint missing"
-          assert "LISTENING EDITION" in (listening.pages[1].extract_text() or ""), "Listening PDF footer mislabeled"
+          assert "Listening Edition" in (listening.pages[1].extract_text() or ""), "Listening PDF title/frontmatter missing"
           assert "DEVELOPMENT EDITION" in (reader.pages[1].extract_text() or ""), "Development PDF footer mislabeled"
           assert "REFERENCE BEFORE INTERPRETATION. ALWAYS." in " ".join(audible.split()), "Chapter Thirty-Two reference-provenance conclusion missing"
           assert "UNEXPLAINED HELD-OUT TIMING RESIDUAL" in " ".join(audible.split()), "Chapter Thirty-Two uncertainty boundary missing"
@@ -139,6 +141,8 @@ jobs:
           assert len(listening.pages) >= 10
           print(f"Validated {len(reader.pages)} development pages and {len(listening.pages)} listening pages")
           PY
+      - name: Verify all 42 EPUB and TXT chapters match prose and PDF has no speech-breaking headers
+        run: python scripts/validate_accessible.py
       - name: Explain this build in GitHub Actions Summary
         if: success()
         run: python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development_Edition.pdf --out dist/BUILD_REPORT.md
@@ -148,6 +152,8 @@ jobs:
           path: |
             dist/The_Diesel_Paradox_Development_Edition.pdf
             dist/The_Diesel_Paradox_Listening_Edition.pdf
+            dist/The_Diesel_Paradox_Book_One_Audio_Friendly.epub
+            dist/The_Diesel_Paradox_Book_One_Continuous_Text.txt
             dist/BUILD_REPORT.md
           if-no-files-found: error
           retention-days: 30
