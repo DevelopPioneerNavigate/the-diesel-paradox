@@ -52,7 +52,7 @@ Aaron had written much of its first solver himself. Its twelve-sector ring was s
 
 It was no longer good enough to decide how to keep people alive around the prototype's wreckage.
 
-Elena Morales, the qualified rigger who had helped extract Luis Ortega during the Directorate's botched seizure, brought the as-built survey to the screen. The support under Sector Six was offset by three millimeters from the nominal drawing. One gusset had been replaced after an early manufacturing inspection. Two bolt groups had been retorqued during the last qualified maintenance interval.
+Elena Mora, the qualified rigger who had helped extract Luis Ortega during the Directorate's botched seizure, brought the as-built survey to the screen. The support under Sector Six was offset by three millimeters from the nominal drawing. One gusset had been replaced after an early manufacturing inspection. Two bolt groups had been retorqued during the last qualified maintenance interval.
 
 None of those facts was sinister. All of them mattered.
 
