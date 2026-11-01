@@ -60,6 +60,8 @@ assets/
 scripts/
   validate_manuscript.py
   build_book.py
+  build_accessible.py      # Reflowable EPUB & continuous TXT
+  validate_accessible.py   # Exact 42-chapter paragraph check
 .github/workflows/book-build.yml
 requirements.txt
 ```
@@ -73,10 +75,12 @@ python -m pip install -r requirements.txt
 python scripts/validate_manuscript.py
 python scripts/build_book.py --out dist/The_Diesel_Paradox_Development.pdf
 python scripts/build_book.py --listening --out dist/The_Diesel_Paradox_Listening_Edition.pdf
+python scripts/build_accessible.py
+python scripts/validate_accessible.py
 python scripts/build_report.py --pdf dist/The_Diesel_Paradox_Development.pdf --out dist/BUILD_REPORT.md
 ```
 
-A GitHub Actions workflow validates the canon and produces **the reference development PDF**, a **chapters-only listening PDF** with selectable text, and **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
+A GitHub Actions workflow validates the canon and produces **the reference development PDF**, a **reflowable audiobook-friendly EPUB**, **continuous TXT**, improved chapters-only listening PDF, and **BUILD_REPORT.md** as artifacts for each PR. Its GitHub Actions run summary explains, after each build, exactly how many chapters exist, word counts, PDF page count, and known blockers. After a reviewed merge to main, it can also publish the built PDF to `books/` as a repository file.
 
 **Current manuscript:** Book One's 42 of 42 chapters have first-draft prose. Chapter 42 re-examines the anchored optical packet with the 1984 R-7 Observer Reference clue, finds an uncertain second message in a private notation shared by Aaron and ASTRA, and preserves explicit alternative decodings and source ambiguity. **Draft complete, not publication-ready.** Full editorial/canon verification, proofreading, interior illustration approval, final pagination and creator release approval remain open. PG-1 stays retired, Axiom dismantled, Bellwether's four-block evacuation in force, and the Directorate's wider safety framework unsigned.
 
@@ -110,3 +114,14 @@ A high-quality JPEG at `assets/cover/approved-cover.jpg` exists for GitHub previ
 5. Build **one authoritative illustrated edition** of each book.
 6. Validate page rendering, overflow, artifacts and chapter index.
 7. Approve a release only after manuscript and art are complete.
+
+
+## Text-to-speech and accessibility compatibility
+
+The original 1,032-page fixed-layout listening PDF repeated headers/footers on 1,031 pages, had approximately 29,248 extracted layout line breaks, and contained at least 121 page transitions interrupting sentences. Some speech-reading apps treated those layout markers as natural stopping points.
+
+**Preferred listening file:** `dist/The_Diesel_Paradox_Book_One_Audio_Friendly.epub` (EPUB3 with EPUB2-compatible NCX; semantic, continuous paragraphs; 42-chapter nav; original checksum-pinned cover). **Fallback:** `dist/The_Diesel_Paradox_Book_One_Continuous_Text.txt` (plain UTF-8, no page furniture). Fixed-layout PDF is not the recommended audio source.
+
+The PDF listening build removes repeated running text and duplicate chapter production headers, keeps typical paragraphs together where layout allows, and identifies the book accurately as a complete first draft rather than an unfinished manuscript. Do not claim this can force a particular third-party audiobook app to handle PDF reading correctly. CI compares every EPUB source paragraph against the original Markdown and rejects missing/altered content, bad book navigation, unverified cover, repeated PDF headers or missing finale.
+
+Avoid hand-modifying any generated file. Run the source validators, then regenerate all editions in CI. Do not change or merge the original cover.
