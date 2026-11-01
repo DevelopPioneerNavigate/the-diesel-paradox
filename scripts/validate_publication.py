@@ -20,9 +20,12 @@ for forbidden in (
     "DEVELOPMENT EDITION", "DEVELOPMENT PLACEHOLDER", "SERIES BIBLE",
     "42-CHAPTER PLAN", "CANON V3.1", "THE ENTIRE NOVEL IS NOT COMPLETE",
     "NOT PUBLICATION-READY", "EDITORIAL AND PUBLISHING APPROVAL REMAIN PENDING",
-    "FIRST DRAFT",
 ):
     assert forbidden not in text.upper(), f"Public release text contains internal label: {forbidden}"
+# A character may legitimately mention a first draft of a technical document.
+# Only frontmatter and publication metadata must not describe this book as a draft.
+frontmatter = " ".join(" ".join(texts[0:2]).split()).upper()
+assert "FIRST DRAFT" not in frontmatter, "Public book title/frontmatter is labeled first draft"
 for required in (
     "The First Impossibility", "A Very Bad Day for Physics",
     "The Room That Wasn't Empty", "The Observer at the Door",
