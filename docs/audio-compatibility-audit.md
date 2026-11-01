@@ -23,3 +23,6 @@ Input examined: the exact previous 1,032-page chapters-only `The_Diesel_Paradox_
 - Real-device acceptance requires import of the regenerated **EPUB** (not PDF), playback across the original Chapter 1 sample, a mid-book section, and Chapter 42 ending with pauses/resume. Test uninterrupted speech at former PDF page boundaries. If the specific app is PDF-only, prefer **TXT** if available or its accessible reading mode.
 - Editorial work remains: complete literary/technical copyedit, normalize occasional name variations only after contextual review, approve interior artwork, verify final pagination/typesetting and obtain creator permission before merge. The earlier 194,277-word first-draft ledger is an inventory, not line-level certification.
 - **Do not merge PR #1 automatically.** Distinguish GitHub Actions PASS from tested audio playback on user's chosen device.
+
+## Additional continuity repair
+- Cross-chapter name scan of all 42 manuscript files confirmed a single surname drift: early `Elena Mora` became `Elena Morales` in Chapters 29–39. These eleven exact late-chapter surname mentions have been normalized back to **Elena Mora** with no story change. The continuity register and draft audit were synchronized.
