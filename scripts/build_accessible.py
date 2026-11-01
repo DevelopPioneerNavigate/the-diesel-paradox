@@ -155,7 +155,7 @@ def build(epub: Path, txt: Path):
            '<dc:creator>DPN Technology</dc:creator><dc:language>en</dc:language>'
            '<meta property="dcterms:modified">2026-11-01T00:00:00Z</meta>'
            '<meta name="cover" content="cover-image"/>'
-           '<dc:description>Complete first draft of Book One; reflowable chapters for accessible reading and speech.</dc:description>'
+           '<dc:description>The complete original Book One novel in reflowable, accessible chapters for reading and speech.</dc:description>'
            '</metadata><manifest>' + "".join(manifest) + '</manifest><spine>' +
            "".join(spine) + '</spine></package>')
     ncx = ('<?xml version="1.0" encoding="UTF-8"?>'
